@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SGGC · Prototipo de alta fidelidad · Nuevos Horizontes</title>
+<style>
+:root{
+  /* ---- Paleta (contraste WCAG verificado) ---- */
+  --azul:#1B4D89;        /* primario   · 8.50:1 sobre blanco  AAA */
+  --azul-osc:#143A68;    /* hover      · 11.45:1              AAA */
+  --azul-claro:#E8F0FA;
+  --tinta:#1A2332;       /* texto      · 15.78:1              AAA */
+  --gris:#5A6472;        /* secundario · 6.00:1               AA  */
+  --borde:#8A93A0;       /* borde UI   · 3.11:1               AA  */
+  --borde-suave:#DDE3EA;
+  --fondo:#F4F6F8;
+  --blanco:#FFFFFF;
+  --exito:#1B6E43;  --exito-bg:#E6F4EC;  --exito-tx:#155D39;
+  --alerta:#A15C00; --alerta-bg:#FFF4E0; --alerta-tx:#7A4600;
+  --error:#B3261E;  --error-bg:#FDECEA;
+  --r:10px; --r-s:6px;
+  --sombra:0 1px 3px rgba(26,35,50,.10), 0 4px 12px rgba(26,35,50,.06);
+  --sombra-alta:0 8px 28px rgba(26,35,50,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
+     background:var(--fondo);color:var(--tinta);font-size:16px;line-height:1.5;
+     -webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit;font-size:1rem}
+:focus-visible{outline:3px solid var(--azul);outline-offset:2px;border-radius:4px}
+
+/* ============ CASCARON DEL DOCUMENTO ============ */
+.wrap{max-width:1540px;margin:0 auto;padding:32px 24px 80px}
+.doc-head{text-align:center;padding:28px 0 8px}
+.doc-head h1{font-size:1.75rem;font-weight:700;letter-spacing:-.02em}
+.doc-head p{color:var(--gris);margin-top:6px;font-size:.95rem}
+.badge{display:inline-block;background:var(--azul-claro);color:var(--azul);font-size:.75rem;
+  font-weight:600;padding:5px 12px;border-radius:99px;margin-top:12px;letter-spacing:.02em}
+.seccion{margin-top:44px}
+.seccion > h2{font-size:1.15rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+.seccion > h2::before{content:'';width:4px;height:20px;background:var(--azul);border-radius:2px}
+.seccion > p.sub{color:var(--gris);font-size:.9rem;margin:0 0 20px 14px}
+
+/* ============ DISPOSITIVOS ============ */
+.fila{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.disp{display:flex;flex-direction:column;align-items:center;gap:10px}
+.disp .cap{font-size:.8rem;color:var(--gris);font-weight:500;text-align:center;max-width:320px}
+.disp .cap b{color:var(--tinta);display:block;font-size:.85rem}
+
+/* --- movil --- */
+.phone{width:330px;height:660px;background:#0F1621;border-radius:34px;padding:11px;
+  box-shadow:var(--sombra-alta);position:relative;flex:none}
+.phone .notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:120px;height:24px;
+  background:#0F1621;border-radius:0 0 14px 14px;z-index:20}
+.screen{width:100%;height:100%;background:var(--blanco);border-radius:24px;overflow:hidden;position:relative}
+.vista{position:absolute;inset:0;display:none;flex-direction:column;background:var(--blanco);
+  animation:entra .28s cubic-bezier(.2,.8,.3,1)}
+.vista.on{display:flex}
+@keyframes entra{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+.statusbar{height:34px;display:flex;align-items:flex-end;justify-content:space-between;
+  padding:0 20px 4px;font-size:.7rem;font-weight:600;color:var(--tinta);flex:none}
+
+/* --- escritorio --- */
+.desk{width:100%;max-width:1460px;background:#2B3442;border-radius:12px;padding:0 0 10px;
+  box-shadow:var(--sombra-alta);overflow:hidden}
+.deskbar{height:38px;display:flex;align-items:center;gap:8px;padding:0 14px;background:#2B3442}
+.deskbar i{width:11px;height:11px;border-radius:50%;display:block}
+.url{flex:1;background:#465061;border-radius:6px;height:23px;display:flex;align-items:center;
+  padding:0 12px;color:#C9D2DE;font-size:.72rem;margin-left:10px}
+.deskscreen{background:var(--fondo);height:800px;position:relative;overflow:hidden}
+.dvista{position:absolute;inset:0;display:none;flex-direction:column;animation:entra .28s cubic-bezier(.2,.8,.3,1)}
+.dvista.on{display:flex}
+#d-login.on{flex-direction:row}
+
+/* ============ COMPONENTES ============ */
+.appbar{background:var(--azul);color:#fff;padding:14px 20px;display:flex;align-items:center;
+  justify-content:space-between;flex:none}
+.appbar h2{font-size:1.02rem;font-weight:600}
+.appbar .sm{font-size:.76rem;opacity:.9;font-weight:400}
+.ico{width:20px;height:20px;display:inline-block;vertical-align:middle}
+.cuerpo{flex:1;overflow-y:auto;padding:18px}
+.cuerpo::-webkit-scrollbar{width:5px}
+.cuerpo::-webkit-scrollbar-thumb{background:var(--borde);border-radius:3px}
+
+.campo{margin-bottom:16px}
+.campo label{display:block;font-size:.82rem;font-weight:600;margin-bottom:6px;color:var(--tinta)}
+.campo .hint{font-size:.74rem;color:var(--gris);margin-top:5px;display:block}
+.inp{width:100%;padding:12px 14px;border:1.5px solid var(--borde);border-radius:var(--r-s);
+  background:#fff;color:var(--tinta);transition:border-color .15s,box-shadow .15s}
+.inp:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(27,77,137,.16)}
+.inp.err{border-color:var(--error);background:var(--error-bg)}
+.msg-err{display:flex;gap:7px;align-items:flex-start;background:var(--error-bg);color:var(--error);
+  border-left:4px solid var(--error);padding:11px 13px;border-radius:var(--r-s);font-size:.8rem;
+  font-weight:500;margin-bottom:14px}
+.msg-ok{display:flex;gap:7px;align-items:flex-start;background:var(--exito-bg);color:var(--exito-tx);
+  border-left:4px solid var(--exito);padding:11px 13px;border-radius:var(--r-s);font-size:.8rem;
+  font-weight:500;margin-bottom:14px}
+
+.btn{width:100%;padding:14px;background:var(--azul);color:#fff;border-radius:var(--r-s);
+  font-weight:600;font-size:.94rem;transition:background .15s,transform .08s}
+.btn:hover{background:var(--azul-osc)}
+.btn:active{transform:scale(.985)}
+.btn.sec{background:#fff;color:var(--azul);border:1.5px solid var(--azul)}
+.btn.sec:hover{background:var(--azul-claro)}
+.btn.sm{padding:9px 16px;width:auto;font-size:.82rem}
+.btn:disabled{background:#B7BEC8;cursor:not-allowed}
+
+.tarjeta{background:#fff;border:1px solid var(--borde-suave);border-radius:var(--r);padding:16px;
+  box-shadow:var(--sombra);margin-bottom:14px}
+.saldo{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-osc) 100%);color:#fff;
+  border-radius:var(--r);padding:20px;margin-bottom:16px}
+.saldo .lbl{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;opacity:.88;font-weight:600}
+.saldo .monto{font-size:2.1rem;font-weight:700;margin:8px 0 4px;letter-spacing:-.02em}
+.saldo .vence{font-size:.82rem;opacity:.93}
+
+.chip{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:99px;
+  font-size:.72rem;font-weight:600;white-space:nowrap}
+.chip.ok{background:var(--exito-bg);color:var(--exito-tx)}
+.chip.warn{background:var(--alerta-bg);color:var(--alerta-tx)}
+.chip.bad{background:var(--error-bg);color:var(--error)}
+.chip.neu{background:#EDF0F4;color:var(--gris)}
+.chip::before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor}
+
+.lista-item{display:flex;justify-content:space-between;align-items:center;padding:13px 0;
+  border-bottom:1px solid var(--borde-suave);cursor:pointer;transition:background .12s}
+.lista-item:hover{background:#FAFBFC}
+.lista-item:last-child{border-bottom:none}
+.lista-item .per{font-weight:600;font-size:.88rem}
+.lista-item .fec{font-size:.75rem;color:var(--gris);margin-top:2px}
+.lista-item .mto{font-weight:600;font-size:.88rem;text-align:right}
+
+.tabbar{display:flex;border-top:1px solid var(--borde-suave);background:#fff;flex:none}
+.tabbar button{flex:1;padding:9px 4px 12px;display:flex;flex-direction:column;align-items:center;
+  gap:3px;font-size:.66rem;font-weight:600;color:var(--gris);transition:color .15s}
+.tabbar button.on{color:var(--azul)}
+.tabbar button:hover{color:var(--azul)}
+.tabbar .dot{position:relative}
+.tabbar .dot::after{content:'2';position:absolute;top:-4px;right:-9px;background:var(--error);color:#fff;
+  font-size:.58rem;font-weight:700;min-width:15px;height:15px;border-radius:99px;display:grid;place-items:center;padding:0 3px}
+
+.alerta{display:flex;gap:11px;padding:13px;border-radius:var(--r-s);margin-bottom:11px;
+  border:1px solid var(--borde-suave);background:#fff;cursor:pointer;transition:box-shadow .15s}
+.alerta:hover{box-shadow:var(--sombra)}
+.alerta.crit{border-left:4px solid var(--error);background:var(--error-bg)}
+.alerta.med{border-left:4px solid var(--alerta);background:var(--alerta-bg)}
+.alerta.ok{border-left:4px solid var(--exito);background:var(--exito-bg)}
+.alerta .ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex:none;font-size:.9rem}
+.alerta h4{font-size:.84rem;font-weight:700;margin-bottom:3px}
+.alerta p{font-size:.77rem;color:var(--gris);line-height:1.45}
+.alerta .when{font-size:.68rem;color:var(--gris);margin-top:5px;font-weight:500}
+
+.pasos{display:flex;gap:6px;margin-bottom:18px}
+.pasos div{flex:1;height:5px;background:var(--borde-suave);border-radius:3px}
+.pasos div.on{background:var(--azul)}
+.resumen{background:var(--fondo);border-radius:var(--r-s);padding:14px;margin-bottom:16px}
+.resumen .r{display:flex;justify-content:space-between;font-size:.85rem;padding:5px 0}
+.resumen .r.tot{border-top:1.5px solid var(--borde);margin-top:7px;padding-top:11px;
+  font-weight:700;font-size:1rem}
+.opcion{display:flex;align-items:center;gap:11px;padding:13px;border:1.5px solid var(--borde-suave);
+  border-radius:var(--r-s);margin-bottom:9px;cursor:pointer;transition:all .15s}
+.opcion:hover{border-color:var(--azul);background:#FAFCFF}
+.opcion.sel{border-color:var(--azul);background:var(--azul-claro);border-width:2px}
+.opcion .radio{width:19px;height:19px;border:2px solid var(--borde);border-radius:50%;flex:none;
+  display:grid;place-items:center}
+.opcion.sel .radio{border-color:var(--azul)}
+.opcion.sel .radio::after{content:'';width:9px;height:9px;background:var(--azul);border-radius:50%}
+.opcion span{font-size:.87rem;font-weight:500}
+
+.desglose{width:100%;border-collapse:collapse;font-size:.83rem}
+.desglose td{padding:9px 0;border-bottom:1px solid var(--borde-suave)}
+.desglose td:last-child{text-align:right;font-weight:600}
+.desglose tr.tot td{border-top:1.5px solid var(--borde);border-bottom:none;padding-top:11px;
+  font-weight:700;font-size:.92rem}
+/* ============ ESCRITORIO ============ */
+.dtop{background:var(--azul);color:#fff;height:58px;display:flex;align-items:center;
+  justify-content:space-between;padding:0 22px;flex:none}
+.dtop .marca{font-weight:700;font-size:1rem;display:flex;align-items:center;gap:9px}
+.dtop .der{display:flex;align-items:center;gap:18px;font-size:.84rem}
+.dtop .avatar{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.22);
+  display:grid;place-items:center;font-weight:700;font-size:.8rem}
+.dside{width:216px;background:#fff;border-right:1px solid var(--borde-suave);padding:14px 0;
+  flex:none;overflow-y:auto}
+.dside button{width:100%;text-align:left;padding:11px 20px;font-size:.87rem;color:var(--gris);
+  font-weight:500;display:flex;align-items:center;gap:11px;transition:all .14s;border-left:3px solid transparent}
+.dside button:hover{background:var(--fondo);color:var(--tinta)}
+.dside button.on{background:var(--azul-claro);color:var(--azul);font-weight:600;border-left-color:var(--azul)}
+.dmain{flex:1;padding:24px 28px;overflow-y:auto}
+.dmain::-webkit-scrollbar{width:7px}
+.dmain::-webkit-scrollbar-thumb{background:var(--borde);border-radius:4px}
+.dhead{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:16px}
+.dhead h1{font-size:1.4rem;font-weight:700;letter-spacing:-.01em}
+.dhead p{color:var(--gris);font-size:.87rem;margin-top:3px}
+.dacc{display:flex;gap:9px;flex:none}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.kpi{background:#fff;border:1px solid var(--borde-suave);border-radius:var(--r);padding:16px;
+  box-shadow:var(--sombra)}
+.kpi .t{font-size:.76rem;color:var(--gris);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:1.5rem;font-weight:700;margin-top:7px;letter-spacing:-.02em}
+.kpi .d{font-size:.76rem;margin-top:5px;font-weight:500}
+.kpi .d.up{color:var(--exito-tx)} .kpi .d.down{color:var(--error)}
+
+.panel{background:#fff;border:1px solid var(--borde-suave);border-radius:var(--r);
+  box-shadow:var(--sombra);overflow:hidden;margin-bottom:20px}
+.panel .ph{padding:15px 18px;border-bottom:1px solid var(--borde-suave);display:flex;
+  justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.panel .ph h3{font-size:.98rem;font-weight:700}
+.panel .pb{padding:18px}
+.filtros{display:flex;gap:9px;flex-wrap:wrap}
+.filtro{padding:8px 13px;border:1.5px solid var(--borde);border-radius:var(--r-s);font-size:.82rem;
+  background:#fff;color:var(--tinta)}
+.buscar{position:relative;flex:1;min-width:230px}
+.buscar input{width:100%;padding:9px 13px 9px 36px;border:1.5px solid var(--borde);
+  border-radius:var(--r-s);font-size:.85rem}
+.buscar input:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(27,77,137,.16)}
+.buscar .lupa{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--gris)}
+
+table.dt{width:100%;border-collapse:collapse;font-size:.85rem}
+table.dt th{text-align:left;padding:11px 14px;background:var(--fondo);font-weight:700;font-size:.76rem;
+  text-transform:uppercase;letter-spacing:.04em;color:var(--gris);border-bottom:1px solid var(--borde-suave)}
+table.dt td{padding:12px 14px;border-bottom:1px solid var(--borde-suave)}
+table.dt tbody tr{transition:background .12s}
+table.dt tbody tr:hover{background:#FAFBFC}
+table.dt tbody tr:last-child td{border-bottom:none}
+table.dt .acc{display:flex;gap:7px}
+table.dt .acc button{padding:5px 9px;border-radius:5px;font-size:.76rem;font-weight:600;color:var(--azul)}
+table.dt .acc button:hover{background:var(--azul-claro)}
+table.dt .acc button.del{color:var(--error)}
+table.dt .acc button.del:hover{background:var(--error-bg)}
+.chk{width:17px;height:17px;border:1.8px solid var(--borde);border-radius:4px;display:grid;
+  place-items:center;cursor:pointer;background:#fff}
+.chk.on{background:var(--azul);border-color:var(--azul);color:#fff;font-size:.66rem;font-weight:700}
+
+/* modal */
+.modal{position:absolute;inset:0;background:rgba(15,22,33,.52);display:none;place-items:center;z-index:50;
+  animation:fade .2s}
+.modal.on{display:grid}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal .box{background:#fff;border-radius:var(--r);width:min(560px,92%);max-height:86%;overflow-y:auto;
+  box-shadow:var(--sombra-alta);animation:sube .26s cubic-bezier(.2,.8,.3,1)}
+@keyframes sube{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+.modal .mh{padding:18px 22px;border-bottom:1px solid var(--borde-suave);display:flex;
+  justify-content:space-between;align-items:center}
+.modal .mh h3{font-size:1.05rem;font-weight:700}
+.modal .mh button{font-size:1.4rem;color:var(--gris);line-height:1;padding:2px 7px;border-radius:5px}
+.modal .mh button:hover{background:var(--fondo);color:var(--tinta)}
+.modal .mb{padding:22px}
+.modal .mf{padding:16px 22px;border-top:1px solid var(--borde-suave);display:flex;gap:10px;
+  justify-content:flex-end;background:var(--fondo)}
+.modal .mf .btn{width:auto;padding:10px 22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.req::after{content:' *';color:var(--error);font-weight:700}
+
+/* toast */
+.toast{position:absolute;bottom:22px;left:50%;transform:translateX(-50%) translateY(90px);
+  background:var(--tinta);color:#fff;padding:13px 20px;border-radius:var(--r-s);font-size:.85rem;
+  font-weight:500;box-shadow:var(--sombra-alta);display:flex;gap:10px;align-items:center;
+  z-index:60;transition:transform .35s cubic-bezier(.2,.9,.3,1);max-width:90%}
+.toast.on{transform:translateX(-50%) translateY(0)}
+.toast .ok{color:#7BE0AE;font-weight:700}
+
+/* composicion aviso */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:20px;align-items:start}
+.previa{background:var(--fondo);border:1px dashed var(--borde);border-radius:var(--r-s);padding:15px;
+  font-size:.81rem;line-height:1.65;white-space:pre-line;color:var(--tinta)}
+.canal{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.5px solid var(--borde-suave);
+  border-radius:var(--r-s);margin-bottom:8px;cursor:pointer;transition:all .14s}
+.canal:hover{border-color:var(--azul)}
+.canal.on{border-color:var(--azul);background:var(--azul-claro)}
+.numpaso{display:flex;align-items:center;gap:9px;font-size:.88rem;font-weight:700;margin-bottom:12px}
+.numpaso i{width:23px;height:23px;background:var(--azul);color:#fff;border-radius:50%;display:grid;
+  place-items:center;font-size:.76rem;font-style:normal;flex:none}
+
+/* leyenda / fichas de documentacion */
+.fichas{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:16px;margin-top:8px}
+.ficha{background:#fff;border:1px solid var(--borde-suave);border-radius:var(--r);padding:17px;
+  box-shadow:var(--sombra)}
+.ficha h4{font-size:.9rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.ficha h4 em{background:var(--azul-claro);color:var(--azul);font-style:normal;font-size:.68rem;
+  padding:3px 8px;border-radius:99px;font-weight:700}
+.ficha p{font-size:.83rem;color:var(--gris);line-height:1.55}
+.ficha ul{margin:8px 0 0 17px;font-size:.82rem;color:var(--gris);line-height:1.7}
+.paleta{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.sw{width:74px}
+.sw .c{height:40px;border-radius:6px;border:1px solid var(--borde-suave)}
+.sw .n{font-size:.66rem;margin-top:5px;font-weight:600}
+.sw .r{font-size:.62rem;color:var(--gris)}
+.aviso-uso{background:var(--azul-claro);border:1px solid #B9D2EE;border-radius:var(--r);
+  padding:15px 18px;font-size:.87rem;color:var(--azul-osc);margin-bottom:8px;display:flex;gap:11px}
+.aviso-uso b{display:block;margin-bottom:3px}
+@media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="doc-head">
+  <h1>Sistema de Gestión de Gastos Comunes</h1>
+  <p>Prototipo interactivo de alta fidelidad · Edificio “Nuevos Horizontes”</p>
+  <p style="font-size:.85rem;margin-top:2px">GRY2203 Ingeniería de Software II · Semana 7 · Grupo 20</p>
+  <span class="badge">Marcelo Díaz Canales · Francisco Parra Andía</span>
+</div>
+
+<div class="aviso-uso" style="margin-top:26px">
+  <span style="font-size:1.2rem">▶</span>
+  <div><b>Prototipo navegable</b>
+  Todos los botones, campos y enlaces responden. Inicie sesión en cualquiera de los dos dispositivos para recorrer el flujo completo:
+  el residente en móvil y el administrador en escritorio. Las credenciales están precargadas; pruebe también con una contraseña incorrecta
+  para ver el manejo de errores. El botón <b>⛶ Pantalla completa</b> de la barra del navegador amplía la vista de escritorio.</div>
+</div>
+<!-- ==================== MOVIL — RESIDENTE ==================== -->
+<div class="seccion">
+  <h2>Aplicación móvil · Perfil Residente</h2>
+  <p class="sub">Flujo: inicio de sesión → estado de cuenta → detalle del prorrateo → pago en línea → alertas</p>
+  <div class="fila">
+    <div class="disp">
+      <div class="phone"><div class="notch"></div><div class="screen" id="movil">
+
+        <!-- M1 LOGIN -->
+        <div class="vista on" id="m-login">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="cuerpo" style="display:flex;flex-direction:column;justify-content:center;padding:26px">
+            <div style="text-align:center;margin-bottom:28px">
+              <div style="width:66px;height:66px;background:var(--azul);border-radius:16px;margin:0 auto 14px;
+                   display:grid;place-items:center;color:#fff;font-size:1.7rem;font-weight:700">NH</div>
+              <h2 style="font-size:1.22rem;font-weight:700">Gastos Comunes</h2>
+              <p style="color:var(--gris);font-size:.84rem;margin-top:3px">Edificio Nuevos Horizontes</p>
+            </div>
+            <div id="m-err" style="display:none" class="msg-err">
+              <span>⚠</span><span>Usuario o contraseña incorrectos. Le quedan <b>2</b> intentos antes del bloqueo temporal.</span>
+            </div>
+            <div class="campo">
+              <label for="m-user">RUT o correo electrónico</label>
+              <input class="inp" id="m-user" value="15.234.876-2" autocomplete="username">
+            </div>
+            <div class="campo">
+              <label for="m-pass">Contraseña</label>
+              <input class="inp" id="m-pass" type="password" value="••••••••" autocomplete="current-password">
+              <span class="hint">Mínimo 8 caracteres</span>
+            </div>
+            <label style="display:flex;gap:9px;align-items:center;font-size:.83rem;margin-bottom:20px;cursor:pointer">
+              <span class="chk on" id="m-rec">✓</span> Mantener sesión iniciada
+            </label>
+            <button class="btn" onclick="mLogin()">Ingresar</button>
+            <button class="btn sec" style="margin-top:10px" onclick="toast('Se envió un enlace de recuperación a su correo')">¿Olvidó su contraseña?</button>
+            <p style="text-align:center;font-size:.76rem;color:var(--gris);margin-top:22px">
+              Pruebe a borrar la contraseña y pulsar Ingresar para ver la validación.</p>
+          </div>
+        </div>
+
+        <!-- M2 ESTADO DE CUENTA -->
+        <div class="vista" id="m-cuenta">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="appbar">
+            <div><h2>Mi cuenta</h2><div class="sm">Depto 1204 · Torre A</div></div>
+            <button onclick="mGo('m-alertas')" style="position:relative;font-size:1.25rem" aria-label="Notificaciones, 2 sin leer">🔔
+              <span style="position:absolute;top:-3px;right:-6px;background:#fff;color:var(--error);font-size:.6rem;
+                font-weight:700;min-width:16px;height:16px;border-radius:99px;display:grid;place-items:center">2</span>
+            </button>
+          </div>
+          <div class="cuerpo">
+            <div class="saldo">
+              <div class="lbl">Saldo total adeudado</div>
+              <div class="monto">$100.470</div>
+              <div class="vence">⚠ Venció el 05/09/2026 · 12 días de atraso</div>
+            </div>
+            <button class="btn" onclick="mGo('m-pago')">Pagar ahora</button>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin:22px 0 6px">
+              <h3 style="font-size:.95rem;font-weight:700">Historial de cuotas</h3>
+              <button style="font-size:.79rem;color:var(--azul);font-weight:600">Ver todo</button>
+            </div>
+            <div class="tarjeta" style="padding:4px 16px">
+              <div class="lista-item" onclick="mGo('m-detalle')">
+                <div><div class="per">Septiembre 2026</div><div class="fec">Vence 05/09/2026</div></div>
+                <div style="text-align:right"><div class="mto">$100.470</div><span class="chip bad" style="margin-top:4px">Morosa</span></div>
+              </div>
+              <div class="lista-item" onclick="toast('Cuota pagada el 03/08/2026 · Recibo N.° 4471')">
+                <div><div class="per">Agosto 2026</div><div class="fec">Pagada el 03/08/2026</div></div>
+                <div style="text-align:right"><div class="mto">$92.300</div><span class="chip ok" style="margin-top:4px">Pagada</span></div>
+              </div>
+              <div class="lista-item" onclick="toast('Cuota pagada el 04/07/2026 · Recibo N.° 4318')">
+                <div><div class="per">Julio 2026</div><div class="fec">Pagada el 04/07/2026</div></div>
+                <div style="text-align:right"><div class="mto">$89.900</div><span class="chip ok" style="margin-top:4px">Pagada</span></div>
+              </div>
+              <div class="lista-item" onclick="toast('Cuota pagada el 02/06/2026 · Recibo N.° 4155')">
+                <div><div class="per">Junio 2026</div><div class="fec">Pagada el 02/06/2026</div></div>
+                <div style="text-align:right"><div class="mto">$91.400</div><span class="chip ok" style="margin-top:4px">Pagada</span></div>
+              </div>
+            </div>
+            <div class="tarjeta" style="background:var(--azul-claro);border-color:#B9D2EE">
+              <div style="font-size:.84rem;font-weight:700;margin-bottom:5px">💡 ¿Necesita más plazo?</div>
+              <p style="font-size:.8rem;color:var(--gris);margin-bottom:11px">
+                Puede solicitar un convenio de pago con un abono inicial del 20% y hasta 12 cuotas.</p>
+              <button class="btn sec sm" onclick="toast('Su solicitud de convenio fue enviada a la administración')">Solicitar convenio</button>
+            </div>
+          </div>
+          <div class="tabbar">
+            <button class="on"><span>▦</span>Inicio</button>
+            <button onclick="mGo('m-detalle')"><span>▤</span>Cuotas</button>
+            <button onclick="mGo('m-pago')"><span>▣</span>Pagar</button>
+            <button onclick="mGo('m-alertas')"><span class="dot">◔</span>Alertas</button>
+          </div>
+        </div>
+
+        <!-- M3 DETALLE -->
+        <div class="vista" id="m-detalle">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="appbar">
+            <button onclick="mGo('m-cuenta')" style="font-size:1.05rem" aria-label="Volver">‹ Volver</button>
+            <h2 style="font-size:.95rem">Detalle de la cuota</h2><span style="width:54px"></span>
+          </div>
+          <div class="cuerpo">
+            <h3 style="font-size:1.05rem;font-weight:700">Septiembre 2026</h3>
+            <p style="font-size:.82rem;color:var(--gris);margin-bottom:16px">
+              Coeficiente de su unidad: <b>0,0072</b> · Superficie 72 m²</p>
+            <div class="tarjeta">
+              <table class="desglose">
+                <tr><td>Agua</td><td>$21.400</td></tr>
+                <tr><td>Electricidad de espacios comunes</td><td>$18.900</td></tr>
+                <tr><td>Gas</td><td>$12.600</td></tr>
+                <tr><td>Mantención de ascensores</td><td>$16.800</td></tr>
+                <tr><td>Remuneraciones del personal</td><td>$22.100</td></tr>
+                <tr><td>Insumos y aseo</td><td>$6.700</td></tr>
+                <tr class="tot"><td>Subtotal del período</td><td>$98.500</td></tr>
+                <tr><td style="color:var(--error)">Interés por mora (12 días)</td><td style="color:var(--error)">$1.970</td></tr>
+                <tr class="tot"><td>Total a pagar</td><td>$100.470</td></tr>
+              </table>
+            </div>
+            <div class="tarjeta" style="background:var(--fondo)">
+              <div style="font-size:.82rem;font-weight:700;margin-bottom:6px">¿Cómo se calcula su cuota?</div>
+              <p style="font-size:.79rem;color:var(--gris);line-height:1.6">
+                Se suma el gasto total del edificio del período y se multiplica por el coeficiente de prorrateo de su
+                unidad, que depende de su superficie. El interés por mora se aplica solo sobre el capital adeudado,
+                a partir del día 16 de atraso.</p>
+            </div>
+            <button class="btn" onclick="mGo('m-pago')">Pagar esta cuota</button>
+          </div>
+        </div>
+        <!-- M4 PAGO -->
+        <div class="vista" id="m-pago">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="appbar">
+            <button onclick="mGo('m-cuenta')" style="font-size:1.05rem" aria-label="Volver">‹ Volver</button>
+            <h2 style="font-size:.95rem">Pago en línea</h2><span style="width:54px"></span>
+          </div>
+          <div class="cuerpo">
+            <div class="pasos"><div class="on"></div><div class="on"></div><div></div></div>
+            <p style="font-size:.78rem;color:var(--gris);margin-bottom:14px;font-weight:600">PASO 2 DE 3 · Medio de pago</p>
+            <div class="resumen">
+              <div class="r"><span>Cuota septiembre 2026</span><span>$98.500</span></div>
+              <div class="r"><span>Interés por mora</span><span>$1.970</span></div>
+              <div class="r tot"><span>Total</span><span>$100.470</span></div>
+            </div>
+            <div class="campo">
+              <label for="m-monto">Monto a pagar</label>
+              <input class="inp" id="m-monto" value="$100.470">
+              <span class="hint">Puede abonar un monto menor; el saldo seguirá devengando interés.</span>
+            </div>
+            <label style="display:block;font-size:.82rem;font-weight:600;margin-bottom:8px">Medio de pago</label>
+            <div class="opcion sel" onclick="pick(this)"><span class="radio"></span><span>💳 Tarjeta de débito</span></div>
+            <div class="opcion" onclick="pick(this)"><span class="radio"></span><span>💳 Tarjeta de crédito</span></div>
+            <div class="opcion" onclick="pick(this)"><span class="radio"></span><span>🏦 Transferencia bancaria</span></div>
+            <button class="btn" style="margin-top:8px" onclick="mPagar()">Confirmar y pagar</button>
+            <p style="text-align:center;font-size:.75rem;color:var(--gris);margin-top:11px">
+              🔒 Será redirigido a la pasarela de pago. Conexión cifrada.</p>
+          </div>
+        </div>
+
+        <!-- M4b COMPROBANTE -->
+        <div class="vista" id="m-ok">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="cuerpo" style="display:flex;flex-direction:column;justify-content:center;text-align:center;padding:30px">
+            <div style="width:78px;height:78px;background:var(--exito-bg);border-radius:50%;margin:0 auto 20px;
+              display:grid;place-items:center;font-size:2.3rem;color:var(--exito)">✓</div>
+            <h2 style="font-size:1.28rem;font-weight:700;margin-bottom:7px">Pago registrado</h2>
+            <p style="color:var(--gris);font-size:.87rem;margin-bottom:22px">
+              Su cuota de septiembre quedó al día.</p>
+            <div class="tarjeta" style="text-align:left">
+              <div class="resumen" style="background:transparent;padding:0">
+                <div class="r"><span>Monto pagado</span><span style="font-weight:600">$100.470</span></div>
+                <div class="r"><span>Medio</span><span>Tarjeta de débito</span></div>
+                <div class="r"><span>N.º transacción</span><span>TX-9938271</span></div>
+                <div class="r"><span>Fecha</span><span>17/09/2026 09:44</span></div>
+                <div class="r"><span>Recibo</span><span style="font-weight:600">N.° 4612</span></div>
+              </div>
+            </div>
+            <button class="btn sec" onclick="toast('Comprobante descargado en PDF')">Descargar comprobante</button>
+            <button class="btn" style="margin-top:10px" onclick="mGo('m-cuenta')">Volver al inicio</button>
+          </div>
+        </div>
+
+        <!-- M5 ALERTAS -->
+        <div class="vista" id="m-alertas">
+          <div class="statusbar"><span>9:41</span><span>▮▮▮ ⌾ ▰</span></div>
+          <div class="appbar">
+            <div><h2>Alertas</h2><div class="sm">2 sin leer</div></div>
+            <button style="font-size:.79rem" onclick="toast('Todas las alertas marcadas como leídas')">Marcar leídas</button>
+          </div>
+          <div class="cuerpo">
+            <div class="alerta crit" onclick="mGo('m-pago')">
+              <div class="ic" style="background:var(--error);color:#fff">!</div>
+              <div><h4>Cuota vencida</h4>
+                <p>Su cuota de septiembre 2026 venció el 05/09. Saldo $100.470 con interés incluido. Toque para pagar.</p>
+                <div class="when">Hoy · 09:00</div></div>
+            </div>
+            <div class="alerta med" onclick="toast('Puede solicitar un convenio desde su estado de cuenta')">
+              <div class="ic" style="background:var(--alerta);color:#fff">⚑</div>
+              <div><h4>Su unidad ingresó en morosidad</h4>
+                <p>Transcurrieron los 15 días de gracia. Desde hoy la deuda devenga interés. Puede solicitar un convenio de pago.</p>
+                <div class="when">Hace 2 días</div></div>
+            </div>
+            <div class="alerta" onclick="toast('Recordatorio enviado el 01/09 a las 08:00')">
+              <div class="ic" style="background:var(--azul-claro);color:var(--azul)">🔔</div>
+              <div><h4>Recordatorio de vencimiento</h4>
+                <p>Su cuota vence en 3 días. Monto: $98.500.</p>
+                <div class="when">01/09/2026 · 08:00</div></div>
+            </div>
+            <div class="alerta ok">
+              <div class="ic" style="background:var(--exito);color:#fff">✓</div>
+              <div><h4>Pago recibido</h4>
+                <p>Se registró su pago de agosto por $92.300. Recibo N.° 4471.</p>
+                <div class="when">05/08/2026 · 17:22</div></div>
+            </div>
+            <div class="tarjeta" style="margin-top:6px">
+              <div style="font-size:.84rem;font-weight:700;margin-bottom:10px">Preferencias de aviso</div>
+              <label style="display:flex;justify-content:space-between;align-items:center;font-size:.82rem;padding:7px 0;cursor:pointer">
+                Recordatorio 3 días antes <span class="chk on">✓</span></label>
+              <label style="display:flex;justify-content:space-between;align-items:center;font-size:.82rem;padding:7px 0;cursor:pointer">
+                Aviso el día del vencimiento <span class="chk on">✓</span></label>
+              <label style="display:flex;justify-content:space-between;align-items:center;font-size:.82rem;padding:7px 0;cursor:pointer">
+                Notificación por SMS <span class="chk">&nbsp;</span></label>
+            </div>
+          </div>
+          <div class="tabbar">
+            <button onclick="mGo('m-cuenta')"><span>▦</span>Inicio</button>
+            <button onclick="mGo('m-detalle')"><span>▤</span>Cuotas</button>
+            <button onclick="mGo('m-pago')"><span>▣</span>Pagar</button>
+            <button class="on"><span class="dot">◔</span>Alertas</button>
+          </div>
+        </div>
+
+        <div class="toast" id="m-toast"><span class="ok">✓</span><span id="m-toast-t"></span></div>
+      </div></div>
+      <div class="cap"><b>Perfil Residente · móvil 375 × 812</b>
+        Cinco pantallas navegables: acceso, estado de cuenta, desglose del prorrateo, pago en tres pasos y centro de alertas.</div>
+    </div>
+
+    <div style="flex:1;min-width:260px">
+      <div class="ficha" style="margin-bottom:14px">
+        <h4><em>Prueba 1</em> Manejo de errores</h4>
+        <p>Borre la contraseña en la pantalla de inicio y pulse <b>Ingresar</b>: el campo se marca en rojo y aparece un
+        mensaje con el número de intentos restantes. La validación es específica, no genérica.</p>
+      </div>
+      <div class="ficha" style="margin-bottom:14px">
+        <h4><em>Prueba 2</em> Flujo de pago</h4>
+        <p>Desde el estado de cuenta pulse <b>Pagar ahora</b>, elija un medio de pago y confirme. El prototipo simula la
+        respuesta de la pasarela y emite el comprobante con número de transacción y folio de recibo.</p>
+      </div>
+      <div class="ficha">
+        <h4><em>Prueba 3</em> Alertas</h4>
+        <p>El indicador de la campana muestra 2 alertas sin leer. Al tocar la alerta crítica de cuota vencida, el
+        prototipo lleva directamente al pago: la notificación es accionable, no solo informativa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== ESCRITORIO — ADMINISTRADOR ==================== -->
+<div class="seccion">
+  <h2>Aplicación web de escritorio · Perfil Administrador</h2>
+  <p class="sub">Flujo: inicio de sesión → panel → registro de residentes → cuotas y pagos → envío de recordatorios</p>
+  <div class="desk">
+    <div class="deskbar">
+      <i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i>
+      <div class="url">🔒 sggc.nuevoshorizontes.cl<span id="d-url" style="opacity:.7">/login</span></div><button id="btn-fs" onclick="fs()" title="Ver a pantalla completa" style="color:#C9D2DE;font-size:.72rem;padding:4px 10px;border-radius:5px;background:#465061;margin-left:8px;white-space:nowrap">⛶ Pantalla completa</button>
+    </div>
+    <div class="deskscreen" id="desk">
+
+      <!-- D1 LOGIN -->
+      <div class="dvista on" id="d-login">
+        <div style="flex:1;min-width:0;background:linear-gradient(140deg,var(--azul) 0%,var(--azul-osc) 100%);
+             display:grid;place-items:center;color:#fff;padding:40px">
+          <div style="max-width:380px">
+            <div style="width:62px;height:62px;background:rgba(255,255,255,.18);border-radius:16px;
+                 display:grid;place-items:center;font-size:1.6rem;font-weight:700;margin-bottom:22px">NH</div>
+            <h2 style="font-size:1.85rem;font-weight:700;line-height:1.25;letter-spacing:-.02em">
+              Gestión de gastos comunes</h2>
+            <p style="opacity:.9;margin-top:14px;font-size:.95rem;line-height:1.6">
+              Edificio Nuevos Horizontes · 160 unidades<br>
+              Cálculo automático del prorrateo, control de morosidad y transparencia para los residentes.</p>
+            <div style="display:flex;gap:26px;margin-top:34px;font-size:.84rem">
+              <div><div style="font-size:1.5rem;font-weight:700">160</div><div style="opacity:.85">unidades</div></div>
+              <div><div style="font-size:1.5rem;font-weight:700">75%</div><div style="opacity:.85">recaudación</div></div>
+              <div><div style="font-size:1.5rem;font-weight:700">18</div><div style="opacity:.85">morosas</div></div>
+            </div>
+          </div>
+        </div>
+        <div style="width:480px;flex:none;background:#fff;display:grid;place-items:center;padding:40px">
+          <div style="width:100%;max-width:340px">
+            <h2 style="font-size:1.45rem;font-weight:700">Iniciar sesión</h2>
+            <p style="color:var(--gris);font-size:.88rem;margin:6px 0 26px">Ingrese sus credenciales para continuar</p>
+            <div id="d-err" style="display:none" class="msg-err">
+              <span>⚠</span><span>Usuario o contraseña incorrectos. Le quedan <b>2</b> intentos.</span>
+            </div>
+            <div class="campo">
+              <label for="d-user">Usuario o RUT</label>
+              <input class="inp" id="d-user" value="admin@nuevoshorizontes.cl" autocomplete="username">
+            </div>
+            <div class="campo">
+              <label for="d-pass">Contraseña</label>
+              <input class="inp" id="d-pass" type="password" value="••••••••••" autocomplete="current-password">
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+              <label style="display:flex;gap:8px;align-items:center;font-size:.84rem;cursor:pointer">
+                <span class="chk on">✓</span> Recordarme</label>
+              <button style="font-size:.84rem;color:var(--azul);font-weight:600"
+                onclick="toast('Se envió un enlace de recuperación al correo registrado')">¿Olvidó su contraseña?</button>
+            </div>
+            <button class="btn" onclick="dLogin()">Ingresar</button>
+            <p style="font-size:.78rem;color:var(--gris);margin-top:20px;line-height:1.6">
+              Los perfiles Administrador, Conserje y Residente comparten esta pantalla; el sistema resuelve el
+              destino según el rol autenticado.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- D2 PANEL -->
+      <div class="dvista" id="d-panel">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button class="on">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Panel general</h1><p>Período septiembre 2026 · actualizado hace 5 minutos</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="dGo('d-infor')">Ver informes</button>
+                <button class="btn sm" onclick="dGo('d-gastos')">Calcular cuotas</button></div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="t">Emitido</div><div class="v">$15.760.000</div>
+                <div class="d">160 cuotas del período</div></div>
+              <div class="kpi"><div class="t">Recaudado</div><div class="v">$11.820.000</div>
+                <div class="d up">▲ 75% · +6 pts vs. agosto</div></div>
+              <div class="kpi"><div class="t">Pendiente</div><div class="v">$2.940.000</div>
+                <div class="d">42 unidades por pagar</div></div>
+              <div class="kpi"><div class="t">En morosidad</div><div class="v">$1.000.000</div>
+                <div class="d down">▼ 18 unidades</div></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Requieren su atención</h3>
+                <button class="btn sm sec" onclick="dGo('d-moros')">Ver morosidad</button></div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>Situación</th><th>Detalle</th><th>Unidades</th><th>Acción</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="chip bad">Crítico</span></td>
+                      <td>Morosidad superior a 60 días</td><td><b>5</b></td>
+                      <td><div class="acc"><button onclick="dGo('d-moros')">Gestionar cobranza</button></div></td></tr>
+                    <tr><td><span class="chip warn">Atención</span></td>
+                      <td>Cuotas vencidas sin aviso enviado</td><td><b>13</b></td>
+                      <td><div class="acc"><button onclick="dGo('d-recor')">Enviar recordatorio</button></div></td></tr>
+                    <tr><td><span class="chip neu">Pendiente</span></td>
+                      <td>Pagos por conciliar con la cartola bancaria</td><td><b>7</b></td>
+                      <td><div class="acc"><button onclick="toast('Conciliación iniciada · 7 movimientos')">Conciliar</button></div></td></tr>
+                    <tr><td><span class="chip ok">Al día</span></td>
+                      <td>Convenios de pago vigentes y cumpliéndose</td><td><b>3</b></td>
+                      <td><div class="acc"><button onclick="toast('3 convenios vigentes')">Revisar</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!-- D3 RESIDENTES -->
+      <div class="dvista" id="d-resid">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button class="on">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Residentes</h1><p>160 unidades · 100 propietarios y 60 arrendatarios</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="toast('Exportando nómina a Excel')">Exportar</button>
+                <button class="btn sm" onclick="abrir('mod-resid')">+ Nuevo residente</button></div>
+            </div>
+            <div class="panel">
+              <div class="ph">
+                <div class="buscar"><span class="lupa">⌕</span>
+                  <input placeholder="Buscar por nombre, RUT o departamento" aria-label="Buscar residente"></div>
+                <div class="filtros">
+                  <select class="filtro" aria-label="Filtrar por tipo"><option>Todos los tipos</option>
+                    <option>Propietario</option><option>Arrendatario</option></select>
+                  <select class="filtro" aria-label="Filtrar por estado"><option>Activos</option>
+                    <option>Inactivos</option><option>Todos</option></select>
+                </div>
+              </div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th style="width:36px"><span class="chk">&nbsp;</span></th><th>Nombre</th><th>RUT</th>
+                    <th>Depto</th><th>Tipo</th><th>Contacto</th><th>Estado</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="chk">&nbsp;</span></td><td><b>Ana Rojas Vergara</b></td><td>15.234.876-2</td>
+                      <td>1204</td><td><span class="chip neu">Propietario</span></td><td>+56 9 8123 4567</td>
+                      <td><span class="chip ok">Activo</span></td>
+                      <td><div class="acc"><button onclick="abrir('mod-resid')">Editar</button>
+                        <button class="del" onclick="toast('Se requiere confirmación para desactivar a Ana Rojas')">Desactivar</button></div></td></tr>
+                    <tr><td><span class="chk">&nbsp;</span></td><td><b>Luis Pardo Cifuentes</b></td><td>9.876.543-1</td>
+                      <td>0803</td><td><span class="chip neu">Arrendatario</span></td><td>lpardo@mail.cl</td>
+                      <td><span class="chip ok">Activo</span></td>
+                      <td><div class="acc"><button onclick="abrir('mod-resid')">Editar</button>
+                        <button class="del" onclick="toast('Se requiere confirmación para desactivar')">Desactivar</button></div></td></tr>
+                    <tr><td><span class="chk">&nbsp;</span></td><td><b>Marta Silva Bravo</b></td><td>12.098.765-4</td>
+                      <td>1501</td><td><span class="chip neu">Propietario</span></td><td>+56 9 7654 3210</td>
+                      <td><span class="chip ok">Activo</span></td>
+                      <td><div class="acc"><button onclick="abrir('mod-resid')">Editar</button>
+                        <button class="del" onclick="toast('Se requiere confirmación para desactivar')">Desactivar</button></div></td></tr>
+                    <tr><td><span class="chk">&nbsp;</span></td><td><b>Jorge Núñez Soto</b></td><td>17.456.789-K</td>
+                      <td>0402</td><td><span class="chip neu">Arrendatario</span></td><td>jnunez@mail.cl</td>
+                      <td><span class="chip ok">Activo</span></td>
+                      <td><div class="acc"><button onclick="abrir('mod-resid')">Editar</button>
+                        <button class="del" onclick="toast('Se requiere confirmación para desactivar')">Desactivar</button></div></td></tr>
+                    <tr><td><span class="chk">&nbsp;</span></td><td><b>Claudia Vera Lagos</b></td><td>11.222.333-9</td>
+                      <td>1907</td><td><span class="chip neu">Propietario</span></td><td>+56 9 5566 7788</td>
+                      <td><span class="chip neu">Inactivo</span></td>
+                      <td><div class="acc"><button onclick="abrir('mod-resid')">Editar</button>
+                        <button onclick="toast('Residente reactivado')">Reactivar</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="ph" style="border-top:1px solid var(--borde-suave);border-bottom:none">
+                <span style="font-size:.83rem;color:var(--gris)">Mostrando 5 de 160 residentes</span>
+                <div class="filtros"><button class="filtro">◀</button><button class="filtro" style="background:var(--azul);color:#fff;border-color:var(--azul)">1</button>
+                  <button class="filtro">2</button><button class="filtro">3</button><button class="filtro">▶</button></div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- D4 CUOTAS -->
+      <div class="dvista" id="d-cuotas">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button class="on">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Cuotas y pagos</h1><p>Período septiembre 2026 · emitido el 01/09/2026</p></div>
+              <div class="dacc">
+                <select class="filtro" aria-label="Seleccionar período"><option>Septiembre 2026</option>
+                  <option>Agosto 2026</option><option>Julio 2026</option></select>
+                <button class="btn sm" onclick="toast('Cálculo ejecutado · 160 cuotas emitidas por $15.760.000')">Calcular cuotas del período</button>
+              </div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="t">Emitido</div><div class="v">$15.760.000</div><div class="d">160 cuotas</div></div>
+              <div class="kpi"><div class="t">Recaudado</div><div class="v">$11.820.000</div><div class="d up">▲ 75%</div></div>
+              <div class="kpi"><div class="t">Pendiente</div><div class="v">$2.940.000</div><div class="d">42 unidades</div></div>
+              <div class="kpi"><div class="t">Morosidad</div><div class="v">$1.000.000</div><div class="d down">▼ 18 unidades</div></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Detalle por unidad</h3>
+                <div class="filtros">
+                  <select class="filtro" aria-label="Filtrar por estado"><option>Todos los estados</option>
+                    <option>Pagada</option><option>Notificada</option><option>Vencida</option><option>En morosidad</option><option>Regularizada</option></select>
+                  <button class="btn sm sec" onclick="toast('Registrar pago presencial')">Registrar pago presencial</button>
+                  <button class="btn sm sec" onclick="toast('Conciliando cartola · 7 movimientos pendientes')">Conciliar cartola</button>
+                </div>
+              </div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>Depto</th><th>Residente</th><th>Monto cuota</th><th>Interés</th><th>Saldo</th>
+                    <th>Vencimiento</th><th>Estado</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>1204</b></td><td>Ana Rojas Vergara</td><td>$98.500</td><td style="color:var(--error)">$1.970</td>
+                      <td><b>$100.470</b></td><td>05/09/2026</td><td><span class="chip bad">En morosidad</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del prorrateo de la unidad 1204')">Ver</button>
+                        <button onclick="toast('Pago registrado para la unidad 1204')">Registrar pago</button></div></td></tr>
+                    <tr><td><b>0803</b></td><td>Luis Pardo Cifuentes</td><td>$92.300</td><td>—</td><td>$0</td>
+                      <td>05/10/2026</td><td><span class="chip ok">Pagada</span></td>
+                      <td><div class="acc"><button onclick="toast('Recibo N.° 4590')">Ver recibo</button></div></td></tr>
+                    <tr><td><b>1501</b></td><td>Marta Silva Bravo</td><td>$105.700</td><td>—</td><td>$105.700</td>
+                      <td>05/10/2026</td><td><span class="chip neu">Notificada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle de la unidad 1501')">Ver</button>
+                        <button onclick="toast('Recordatorio enviado a Marta Silva')">Recordar</button></div></td></tr>
+                    <tr><td><b>0402</b></td><td>Jorge Núñez Soto</td><td>$88.100</td><td style="color:var(--error)">$1.320</td>
+                      <td><b>$89.420</b></td><td>05/09/2026</td><td><span class="chip warn">Vencida</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle de la unidad 0402')">Ver</button>
+                        <button onclick="toast('Recordatorio enviado a Jorge Núñez')">Recordar</button></div></td></tr>
+                    <tr><td><b>1907</b></td><td>Claudia Vera Lagos</td><td>$112.400</td><td>—</td><td>$0</td>
+                      <td>05/10/2026</td><td><span class="chip ok">Regularizada</span></td>
+                      <td><div class="acc"><button onclick="toast('Recibo N.° 4601')">Ver recibo</button></div></td></tr>
+                    <tr><td><b>0601</b></td><td>Rodrigo Maldonado Paz</td><td>$94.800</td><td style="color:var(--error)">$2.840</td>
+                      <td><b>$97.640</b></td><td>05/08/2026</td><td><span class="chip warn">Convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Convenio: 6 cuotas · abono inicial 20% · al día')">Ver convenio</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!-- D5 MOROSIDAD / RECORDATORIOS -->
+            <div class="dvista" id="d-moros">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button class="on">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Morosidad</h1><p>18 unidades con deuda vencida · $1.000.000 adeudado · corte al 17/09/2026</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="dGo('d-infor')">Informe de morosidad</button>
+                <button class="btn sm" onclick="dGo('d-recor')">✉ Enviar recordatorios</button></div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="t">Deuda total</div><div class="v">$1.000.000</div><div class="d">capital $953.800 + interés $46.200</div></div>
+              <div class="kpi"><div class="t">Unidades morosas</div><div class="v">18</div><div class="d down">11,3% de las 160 unidades</div></div>
+              <div class="kpi"><div class="t">Atraso promedio</div><div class="v">31 días</div><div class="d">máximo registrado: 67 días</div></div>
+              <div class="kpi"><div class="t">Con convenio</div><div class="v">3</div><div class="d up">todos al día en su plan de pago</div></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Unidades en morosidad</h3>
+                <div class="filtros">
+                  <select class="filtro" aria-label="Filtrar por antigüedad"><option>Toda antigüedad</option>
+                    <option>1 a 30 días</option><option>31 a 60 días</option><option>Más de 60 días</option></select>
+                  <select class="filtro" aria-label="Filtrar por convenio"><option>Todas</option>
+                    <option>Sin convenio</option><option>Con convenio</option></select>
+                  <button class="btn sm sec" onclick="toast('Listado exportado')">Exportar</button>
+                </div>
+              </div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>Depto</th><th>Residente</th><th>Período más antiguo</th><th>Días</th>
+                    <th style="text-align:right">Capital</th><th style="text-align:right">Interés</th>
+                    <th style="text-align:right">Total</th><th>Situación</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>0209</b></td><td>Héctor Zamora Díaz</td><td>Junio 2026</td>
+                      <td><span class="chip bad">67</span></td><td style="text-align:right">$178.400</td>
+                      <td style="text-align:right;color:var(--error)">$5.900</td><td style="text-align:right"><b>$184.300</b></td>
+                      <td><span class="chip bad">Sin convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 0209')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 0209')">Convenio</button></div></td></tr>
+                    <tr><td><b>0601</b></td><td>Rodrigo Maldonado Paz</td><td>Agosto 2026</td>
+                      <td><span class="chip bad">43</span></td><td style="text-align:right">$94.800</td>
+                      <td style="text-align:right;color:var(--error)">$2.840</td><td style="text-align:right"><b>$97.640</b></td>
+                      <td><span class="chip warn">Con convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 0601')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 0601')">Convenio</button></div></td></tr>
+                    <tr><td><b>1204</b></td><td>Ana Rojas Vergara</td><td>Septiembre 2026</td>
+                      <td><span class="chip warn">12</span></td><td style="text-align:right">$98.500</td>
+                      <td style="text-align:right;color:var(--error)">$1.970</td><td style="text-align:right"><b>$100.470</b></td>
+                      <td><span class="chip bad">Sin convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 1204')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 1204')">Convenio</button></div></td></tr>
+                    <tr><td><b>0402</b></td><td>Jorge Núñez Soto</td><td>Septiembre 2026</td>
+                      <td><span class="chip warn">12</span></td><td style="text-align:right">$88.100</td>
+                      <td style="text-align:right;color:var(--error)">$1.320</td><td style="text-align:right"><b>$89.420</b></td>
+                      <td><span class="chip bad">Sin convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 0402')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 0402')">Convenio</button></div></td></tr>
+                    <tr><td><b>1105</b></td><td>Patricia Fuentes Lara</td><td>Septiembre 2026</td>
+                      <td><span class="chip warn">8</span></td><td style="text-align:right">$91.200</td>
+                      <td style="text-align:right;color:var(--error)">$0</td><td style="text-align:right"><b>$91.200</b></td>
+                      <td><span class="chip neu">Período de gracia</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 1105')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 1105')">Convenio</button></div></td></tr>
+                    <tr><td><b>1703</b></td><td>Sergio Contreras Ruiz</td><td>Julio 2026</td>
+                      <td><span class="chip bad">55</span></td><td style="text-align:right">$102.300</td>
+                      <td style="text-align:right;color:var(--error)">$4.100</td><td style="text-align:right"><b>$106.400</b></td>
+                      <td><span class="chip warn">Con convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 1703')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 1703')">Convenio</button></div></td></tr>
+                    <tr><td><b>0918</b></td><td>Elena Castro Miranda</td><td>Agosto 2026</td>
+                      <td><span class="chip bad">36</span></td><td style="text-align:right">$87.600</td>
+                      <td style="text-align:right;color:var(--error)">$2.190</td><td style="text-align:right"><b>$89.790</b></td>
+                      <td><span class="chip bad">Sin convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 0918')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 0918')">Convenio</button></div></td></tr>
+                    <tr><td><b>1412</b></td><td>Andrés Lillo Pinto</td><td>Septiembre 2026</td>
+                      <td><span class="chip warn">12</span></td><td style="text-align:right">$95.400</td>
+                      <td style="text-align:right;color:var(--error)">$1.430</td><td style="text-align:right"><b>$96.830</b></td>
+                      <td><span class="chip bad">Sin convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Estado de cuenta de la unidad 1412')">Ver</button>
+                        <button onclick="toast('Convenio: abono inicial 20%, hasta 12 cuotas · unidad 1412')">Convenio</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="ph" style="border-top:1px solid var(--borde-suave);border-bottom:none">
+                <span style="font-size:.83rem;color:var(--gris)">Mostrando 8 de 18 unidades morosas</span>
+                <button class="btn sm" onclick="dGo('d-recor')">Enviar aviso a las 18 unidades</button>
+              </div>
+            </div>
+            <div class="split">
+              <div class="panel">
+                <div class="ph"><h3>Antigüedad de la deuda</h3></div>
+                <div class="pb">
+                  <table class="dt" style="border:none">
+                    <thead><tr><th>Tramo</th><th>Unidades</th><th style="text-align:right">Monto</th><th>Acción sugerida</th></tr></thead>
+                    <tbody>
+                      <tr><td><span class="chip neu">Período de gracia</span></td><td>4</td>
+                        <td style="text-align:right">$358.000</td><td>Recordatorio automático</td></tr>
+                      <tr><td><span class="chip warn">1 a 30 días</span></td><td>8</td>
+                        <td style="text-align:right">$438.000</td><td>Aviso de morosidad</td></tr>
+                      <tr><td><span class="chip warn">31 a 60 días</span></td><td>5</td>
+                        <td style="text-align:right">$287.000</td><td>Ofrecer convenio de pago</td></tr>
+                      <tr><td><span class="chip bad">61 a 90 días</span></td><td>3</td>
+                        <td style="text-align:right">$168.000</td><td>Gestión directa de cobranza</td></tr>
+                      <tr><td><span class="chip bad">Más de 90 días</span></td><td>2</td>
+                        <td style="text-align:right">$107.000</td><td>Evaluar cobranza prejudicial</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="ph"><h3>Convenios de pago vigentes</h3>
+                  <button class="btn sm sec" onclick="toast('Formulario de nuevo convenio')">+ Nuevo convenio</button></div>
+                <div class="pb" style="padding:0">
+                  <table class="dt">
+                    <thead><tr><th>Depto</th><th>Deuda original</th><th>Abono inicial</th><th>Cuotas</th><th>Estado</th></tr></thead>
+                    <tbody>
+                      <tr><td><b>0601</b></td><td>$122.050</td><td>$24.410 (20%)</td><td>4 de 6 pagadas</td>
+                        <td><span class="chip ok">Al día</span></td></tr>
+                      <tr><td><b>1703</b></td><td>$133.000</td><td>$26.600 (20%)</td><td>2 de 8 pagadas</td>
+                        <td><span class="chip ok">Al día</span></td></tr>
+                      <tr><td><b>0315</b></td><td>$198.400</td><td>$49.600 (25%)</td><td>7 de 12 pagadas</td>
+                        <td><span class="chip warn">1 cuota pendiente</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pb" style="padding-top:0">
+                  <p style="font-size:.79rem;color:var(--gris);line-height:1.6">
+                    El convenio congela el devengo de intereses. Caduca automáticamente ante dos cuotas
+                    consecutivas impagas y reactiva el interés desde la fecha de incumplimiento.</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+<div class="dvista" id="d-recor">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button class="on">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Recordatorios y alertas</h1>
+                <p>Composición y envío de avisos a las unidades con deuda vencida</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="dGo('d-moros')">⚠ Ver morosidad</button></div>
+            </div>
+            <div class="split">
+              <div>
+                <div class="panel">
+                  <div class="ph"><div class="numpaso"><i>1</i> Seleccionar destinatarios</div>
+                    <button class="btn sm sec" onclick="selTodas()">Seleccionar todas</button></div>
+                  <div class="pb" style="padding:0">
+                    <table class="dt">
+                      <thead><tr><th style="width:36px"></th><th>Depto</th><th>Residente</th><th>Días</th>
+                        <th>Saldo</th><th>Último aviso</th></tr></thead>
+                      <tbody id="tb-moros">
+                        <tr><td><span class="chk on" onclick="tgl(this)">✓</span></td><td><b>1204</b></td>
+                          <td>Ana Rojas Vergara</td><td><span class="chip warn">12</span></td><td><b>$100.470</b></td><td>01/09/2026</td></tr>
+                        <tr><td><span class="chk on" onclick="tgl(this)">✓</span></td><td><b>0402</b></td>
+                          <td>Jorge Núñez Soto</td><td><span class="chip warn">12</span></td><td><b>$89.420</b></td><td>01/09/2026</td></tr>
+                        <tr><td><span class="chk on" onclick="tgl(this)">✓</span></td><td><b>0601</b></td>
+                          <td>Rodrigo Maldonado Paz</td><td><span class="chip bad">43</span></td><td><b>$97.640</b></td><td>15/08/2026</td></tr>
+                        <tr><td><span class="chk" onclick="tgl(this)">&nbsp;</span></td><td><b>1105</b></td>
+                          <td>Patricia Fuentes Lara</td><td><span class="chip warn">8</span></td><td><b>$91.200</b></td><td>Sin aviso</td></tr>
+                        <tr><td><span class="chk on" onclick="tgl(this)">✓</span></td><td><b>0209</b></td>
+                          <td>Héctor Zamora Díaz</td><td><span class="chip bad">67</span></td><td><b>$184.300</b></td><td>20/07/2026</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ph" style="border-top:1px solid var(--borde-suave);border-bottom:none">
+                    <span style="font-size:.84rem;color:var(--gris)"><b id="n-sel">4</b> de 18 unidades seleccionadas</span>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="ph"><div class="numpaso"><i>3</i> Historial de envíos</div></div>
+                  <div class="pb" style="padding:0">
+                    <table class="dt">
+                      <thead><tr><th>Fecha</th><th>Destinatarios</th><th>Canal</th><th>Plantilla</th><th>Resultado</th></tr></thead>
+                      <tbody>
+                        <tr><td>01/09/2026</td><td>18</td><td>Correo + SMS</td><td>Aviso de morosidad</td>
+                          <td><span class="chip ok">18 entregados</span></td></tr>
+                        <tr><td>25/08/2026</td><td>46</td><td>Correo</td><td>Recordatorio previo</td>
+                          <td><span class="chip warn">44 entregados · 2 con error</span></td></tr>
+                        <tr><td>05/08/2026</td><td>160</td><td>Correo + App</td><td>Emisión de cuota</td>
+                          <td><span class="chip ok">160 entregados</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="ph"><div class="numpaso"><i>2</i> Componer el aviso</div></div>
+                <div class="pb">
+                  <label style="display:block;font-size:.82rem;font-weight:600;margin-bottom:8px">Canal de envío</label>
+                  <div class="canal on" onclick="tglCanal(this)"><span class="chk on">✓</span><span style="font-size:.86rem">✉ Correo electrónico</span></div>
+                  <div class="canal on" onclick="tglCanal(this)"><span class="chk on">✓</span><span style="font-size:.86rem">💬 Mensaje de texto (SMS)</span></div>
+                  <div class="canal on" onclick="tglCanal(this)"><span class="chk on">✓</span><span style="font-size:.86rem">🔔 Notificación en la aplicación</span></div>
+                  <div class="campo" style="margin-top:18px">
+                    <label for="plant">Plantilla</label>
+                    <select class="inp" id="plant"><option>Aviso de morosidad</option>
+                      <option>Recordatorio previo al vencimiento</option><option>Última notificación antes de cobranza</option></select>
+                  </div>
+                  <label style="display:block;font-size:.82rem;font-weight:600;margin-bottom:7px">Vista previa</label>
+                  <div class="previa">Estimado/a {nombre}:
+
+Su cuota de gastos comunes del departamento {depto}, período {periodo}, registra {dias} días de atraso y un saldo de {saldo}.
+
+Puede pagar en línea desde la aplicación o solicitar un convenio de pago.
+
+Administración
+Edificio Nuevos Horizontes</div>
+                  <div style="display:flex;gap:9px;margin-top:16px">
+                    <button class="btn sec sm" style="flex:1" onclick="toast('Envío programado para mañana a las 09:00')">Programar</button>
+                    <button class="btn sm" style="flex:1" onclick="enviar()">Enviar ahora</button>
+                  </div>
+                  <p style="font-size:.76rem;color:var(--gris);margin-top:13px;line-height:1.55">
+                    Los avisos automáticos se envían al vencer el plazo y al día 16, cuando la unidad entra en morosidad.</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <div class="dvista" id="d-deptos">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button class="on">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Departamentos</h1><p>160 unidades · 20 pisos · superficie total 11.120 m²</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="toast('Exportando catastro de unidades')">Exportar</button>
+                <button class="btn sm" onclick="toast('Formulario de alta de unidad')">+ Nueva unidad</button></div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="t">Unidades</div><div class="v">160</div><div class="d">100 propietarios · 60 arriendo</div></div>
+              <div class="kpi"><div class="t">Superficie total</div><div class="v">11.120 m²</div><div class="d">promedio 69,5 m² por unidad</div></div>
+              <div class="kpi"><div class="t">Suma de coeficientes</div><div class="v">1,0000</div><div class="d up">✓ invariante verificada</div></div>
+              <div class="kpi"><div class="t">Unidades al día</div><div class="v">142</div><div class="d up">▲ 88,75%</div></div>
+            </div>
+            <div class="panel">
+              <div class="ph">
+                <div class="buscar"><span class="lupa">⌕</span>
+                  <input placeholder="Buscar por número de departamento o residente" aria-label="Buscar departamento"></div>
+                <div class="filtros">
+                  <select class="filtro" aria-label="Filtrar por piso"><option>Todos los pisos</option>
+                    <option>Pisos 1 a 5</option><option>Pisos 6 a 10</option><option>Pisos 11 a 15</option><option>Pisos 16 a 20</option></select>
+                  <select class="filtro" aria-label="Filtrar por orientación"><option>Toda orientación</option>
+                    <option>Norte</option><option>Oriente</option><option>Poniente</option></select>
+                </div>
+              </div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>Depto</th><th>Piso</th><th>Orientación</th><th>Superficie</th>
+                    <th>Coeficiente</th><th>Residente</th><th>Tipo</th><th>Estado de cuenta</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>0209</b></td><td>2</td><td>Norte</td><td>58,4 m²</td><td>0,0058</td>
+                      <td>Héctor Zamora Díaz</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip bad">En morosidad</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 0209')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>0402</b></td><td>4</td><td>Oriente</td><td>64,0 m²</td><td>0,0064</td>
+                      <td>Jorge Núñez Soto</td><td><span class="chip neu">Arrendatario</span></td>
+                      <td><span class="chip warn">Vencida</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 0402')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>0601</b></td><td>6</td><td>Norte</td><td>71,2 m²</td><td>0,0071</td>
+                      <td>Rodrigo Maldonado Paz</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip warn">Convenio</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 0601')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>0803</b></td><td>8</td><td>Poniente</td><td>66,8 m²</td><td>0,0067</td>
+                      <td>Luis Pardo Cifuentes</td><td><span class="chip neu">Arrendatario</span></td>
+                      <td><span class="chip ok">Al día</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 0803')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>1105</b></td><td>11</td><td>Oriente</td><td>69,5 m²</td><td>0,0069</td>
+                      <td>Patricia Fuentes Lara</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip warn">Vencida</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 1105')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>1204</b></td><td>12</td><td>Norte</td><td>72,0 m²</td><td>0,0072</td>
+                      <td>Ana Rojas Vergara</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip bad">En morosidad</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 1204')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>1501</b></td><td>15</td><td>Poniente</td><td>78,3 m²</td><td>0,0078</td>
+                      <td>Marta Silva Bravo</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip ok">Al día</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 1501')">Ver ficha</button></div></td></tr>
+                    <tr><td><b>1907</b></td><td>19</td><td>Oriente</td><td>83,1 m²</td><td>0,0083</td>
+                      <td>Claudia Vera Lagos</td><td><span class="chip neu">Propietario</span></td>
+                      <td><span class="chip ok">Al día</span></td>
+                      <td><div class="acc"><button onclick="toast('Ficha de la unidad 1907')">Ver ficha</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="ph" style="border-top:1px solid var(--borde-suave);border-bottom:none">
+                <span style="font-size:.83rem;color:var(--gris)">Mostrando 8 de 160 unidades</span>
+                <div class="filtros"><button class="filtro">◀</button>
+                  <button class="filtro" style="background:var(--azul);color:#fff;border-color:var(--azul)">1</button>
+                  <button class="filtro">2</button><button class="filtro">3</button><button class="filtro">▶</button></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Cómo se calcula el coeficiente de prorrateo</h3></div>
+              <div class="pb">
+                <p style="font-size:.87rem;color:var(--gris);line-height:1.65">
+                  El coeficiente de cada unidad es su superficie dividida por la superficie total del edificio.
+                  La suma de los 160 coeficientes debe ser exactamente 1: el sistema bloquea el cálculo del período
+                  si esa condición no se cumple, porque implicaría repartir más o menos que el gasto real.
+                  Ejemplo: la unidad 1204 tiene 72,0 m² sobre 11.120 m² totales, lo que da un coeficiente de 0,0072,
+                  es decir, le corresponde el 0,72% del gasto común del período.</p>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="dvista" id="d-gastos">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button class="on">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button onclick="dGo('d-infor')">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Gastos del período</h1><p>Septiembre 2026 · 7 documentos cargados · cierre el 05/09/2026</p></div>
+              <div class="dacc"><button class="btn sm sec" onclick="toast('Cargando documento de respaldo')">Cargar factura</button>
+                <button class="btn sm" onclick="toast('Período cerrado · 160 cuotas emitidas por $15.760.000')">Cerrar período y calcular</button></div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="t">Gasto ordinario</div><div class="v">$15.406.000</div><div class="d">6 documentos · se reparte entre las 160 unidades</div></div>
+              <div class="kpi"><div class="t">Gasto extraordinario</div><div class="v">$354.000</div><div class="d">1 documento · solo 100 propietarios</div></div>
+              <div class="kpi"><div class="t">Total del período</div><div class="v">$15.760.000</div><div class="d up">▲ 4,2% vs. agosto</div></div>
+              <div class="kpi"><div class="t">Por validar</div><div class="v">2</div><div class="d down">bloquean el cierre del período</div></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Documentos del período</h3>
+                <div class="filtros">
+                  <select class="filtro" aria-label="Filtrar por tipo"><option>Todos los tipos</option>
+                    <option>Ordinario</option><option>Extraordinario</option></select>
+                  <select class="filtro" aria-label="Filtrar por estado"><option>Todos los estados</option>
+                    <option>Validada</option><option>Por validar</option></select>
+                </div>
+              </div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>N.º</th><th>Concepto</th><th>Proveedor</th><th>Tipo</th>
+                    <th style="text-align:right">Monto</th><th>Fecha</th><th>Estado</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>G-091</b></td><td>Agua potable</td><td>Aguas Andinas</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$3.348.000</b></td><td>02/09/2026</td>
+                      <td><span class="chip ok">Validada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-091')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-091')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-092</b></td><td>Electricidad espacios comunes</td><td>Enel Distribución</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$2.956.000</b></td><td>02/09/2026</td>
+                      <td><span class="chip ok">Validada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-092')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-092')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-093</b></td><td>Gas</td><td>Lipigas</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$1.970.000</b></td><td>03/09/2026</td>
+                      <td><span class="chip ok">Validada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-093')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-093')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-094</b></td><td>Mantención de ascensores</td><td>Otis Chile</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$2.628.000</b></td><td>01/09/2026</td>
+                      <td><span class="chip ok">Validada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-094')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-094')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-095</b></td><td>Remuneraciones del personal</td><td>Planilla interna</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$3.456.000</b></td><td>30/08/2026</td>
+                      <td><span class="chip ok">Validada</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-095')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-095')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-096</b></td><td>Insumos y aseo</td><td>Comercial Lira</td>
+                      <td><span class="chip neu">Ordinario</span></td><td style="text-align:right"><b>$1.048.000</b></td><td>04/09/2026</td>
+                      <td><span class="chip warn">Por validar</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-096')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-096')">Respaldo</button></div></td></tr>
+                    <tr><td><b>G-097</b></td><td>Reparación bomba de agua</td><td>Servitec Ltda.</td>
+                      <td><span class="chip warn">Extraordinario</span></td><td style="text-align:right"><b>$354.000</b></td><td>05/09/2026</td>
+                      <td><span class="chip warn">Por validar</span></td>
+                      <td><div class="acc"><button onclick="toast('Detalle del gasto G-097')">Ver</button>
+                        <button onclick="toast('Documento de respaldo del gasto G-097')">Respaldo</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="split">
+              <div class="panel">
+                <div class="ph"><h3>Comparación con períodos anteriores</h3></div>
+                <div class="pb">
+                  <table class="dt" style="border:none">
+                    <thead><tr><th>Concepto</th><th style="text-align:right">Julio</th>
+                      <th style="text-align:right">Agosto</th><th style="text-align:right">Septiembre</th><th>Variación</th></tr></thead>
+                    <tbody>
+                      <tr><td>Agua potable</td><td style="text-align:right">$3.190.000</td>
+                        <td style="text-align:right">$3.244.000</td><td style="text-align:right"><b>$3.348.000</b></td>
+                        <td><span class="chip warn">▲ 3,2%</span></td></tr>
+                      <tr><td>Electricidad</td><td style="text-align:right">$3.104.000</td>
+                        <td style="text-align:right">$3.020.000</td><td style="text-align:right"><b>$2.956.000</b></td>
+                        <td><span class="chip ok">▼ 2,1%</span></td></tr>
+                      <tr><td>Gas</td><td style="text-align:right">$1.842.000</td>
+                        <td style="text-align:right">$1.906.000</td><td style="text-align:right"><b>$1.970.000</b></td>
+                        <td><span class="chip warn">▲ 3,4%</span></td></tr>
+                      <tr><td>Ascensores</td><td style="text-align:right">$2.628.000</td>
+                        <td style="text-align:right">$2.628.000</td><td style="text-align:right"><b>$2.628.000</b></td>
+                        <td><span class="chip neu">sin cambio</span></td></tr>
+                      <tr><td>Remuneraciones</td><td style="text-align:right">$3.456.000</td>
+                        <td style="text-align:right">$3.456.000</td><td style="text-align:right"><b>$3.456.000</b></td>
+                        <td><span class="chip neu">sin cambio</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="ph"><h3>Simulación del prorrateo</h3></div>
+                <div class="pb">
+                  <p style="font-size:.84rem;color:var(--gris);margin-bottom:14px">
+                    Vista previa del reparto antes de cerrar el período.</p>
+                  <div class="resumen">
+                    <div class="r"><span>Gasto ordinario</span><span>$15.406.000</span></div>
+                    <div class="r"><span>÷ 160 unidades por coeficiente</span><span>—</span></div>
+                    <div class="r"><span>Cuota promedio ordinaria</span><span>$96.288</span></div>
+                    <div class="r"><span>Gasto extraordinario</span><span>$354.000</span></div>
+                    <div class="r"><span>÷ 100 propietarios</span><span>—</span></div>
+                    <div class="r"><span>Aporte promedio extraordinario</span><span>$3.540</span></div>
+                    <div class="r tot"><span>Total a emitir</span><span>$15.760.000</span></div>
+                  </div>
+                  <div class="msg-ok"><span>✓</span><span>La suma de los coeficientes de las 160 unidades es igual a 1. El cálculo puede ejecutarse.</span></div>
+                  <button class="btn" onclick="toast('Período cerrado · 160 cuotas emitidas')">Cerrar período y emitir cuotas</button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="dvista" id="d-infor">
+        <div class="dtop">
+          <div class="marca"><span style="width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:7px;
+            display:grid;place-items:center;font-size:.72rem">NH</span> SGGC · Nuevos Horizontes</div>
+          <div class="der"><span>🔔 5</span><span>Patricia Soto</span><span class="avatar">PS</span></div>
+        </div>
+        <div style="display:flex;flex:1;overflow:hidden">
+          <nav class="dside" aria-label="Menú principal">
+            <button onclick="dGo('d-panel')">▦ Inicio</button>
+            <button onclick="dGo('d-resid')">👥 Residentes</button>
+            <button onclick="dGo('d-deptos')">🏢 Departamentos</button>
+            <button onclick="dGo('d-gastos')">🧾 Gastos del período</button>
+            <button onclick="dGo('d-cuotas')">💰 Cuotas y pagos</button>
+            <button onclick="dGo('d-moros')">⚠ Morosidad</button>
+            <button onclick="dGo('d-recor')">✉ Recordatorios</button>
+            <button class="on">📊 Informes</button>
+          </nav>
+          <main class="dmain">
+            <div class="dhead">
+              <div><h1>Informes</h1><p>Período septiembre 2026 · datos actualizados hace 5 minutos</p></div>
+              <div class="dacc">
+                <select class="filtro" aria-label="Seleccionar período"><option>Septiembre 2026</option>
+                  <option>Agosto 2026</option><option>Trimestre jul–sep 2026</option></select>
+                <button class="btn sm sec" onclick="toast('Informe exportado en PDF')">Exportar PDF</button>
+                <button class="btn sm sec" onclick="toast('Informe exportado en Excel')">Exportar Excel</button></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Informes disponibles</h3></div>
+              <div class="pb" style="padding:0">
+                <table class="dt">
+                  <thead><tr><th>Informe</th><th>Descripción</th><th>Última generación</th><th>Acciones</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>Recaudación del período</b></td>
+                      <td>Emitido, recaudado y pendiente por unidad y por concepto.</td><td>Hoy · 09:12</td>
+                      <td><div class="acc"><button onclick="toast('Generando informe de recaudación')">Generar</button>
+                        <button onclick="toast('Informe de recaudación exportado')">Exportar</button></div></td></tr>
+                    <tr><td><b>Morosidad</b></td>
+                      <td>Unidades morosas con días de atraso, saldo e intereses devengados.</td><td>Hoy · 09:12</td>
+                      <td><div class="acc"><button onclick="dGo('d-moros')">Ver detalle</button>
+                        <button onclick="toast('Informe de morosidad exportado')">Exportar</button></div></td></tr>
+                    <tr><td><b>Gastos por concepto</b></td>
+                      <td>Desglose del gasto del período comparado con los tres anteriores.</td><td>Hoy · 09:12</td>
+                      <td><div class="acc"><button onclick="dGo('d-gastos')">Ver detalle</button>
+                        <button onclick="toast('Informe de gastos exportado')">Exportar</button></div></td></tr>
+                    <tr><td><b>Nómina de residentes</b></td>
+                      <td>Catastro vigente de propietarios y arrendatarios por unidad.</td><td>Ayer · 18:40</td>
+                      <td><div class="acc"><button onclick="dGo('d-resid')">Ver detalle</button>
+                        <button onclick="toast('Nómina exportada')">Exportar</button></div></td></tr>
+                    <tr><td><b>Historial de avisos</b></td>
+                      <td>Registro de recordatorios enviados, canal y resultado de entrega.</td><td>Hoy · 08:05</td>
+                      <td><div class="acc"><button onclick="dGo('d-recor')">Ver detalle</button>
+                        <button onclick="toast('Historial exportado')">Exportar</button></div></td></tr>
+                    <tr><td><b>Convenios de pago</b></td>
+                      <td>Convenios vigentes, cuotas pactadas y estado de cumplimiento.</td><td>Hoy · 09:12</td>
+                      <td><div class="acc"><button onclick="toast('3 convenios vigentes · todos al día')">Ver detalle</button>
+                        <button onclick="toast('Informe de convenios exportado')">Exportar</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="split">
+              <div class="panel">
+                <div class="ph"><h3>Recaudación por mes</h3></div>
+                <div class="pb">
+                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">Junio 2026</span><span style="color:var(--gris)">82% · $12.740.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:82%;background:var(--exito);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">Julio 2026</span><span style="color:var(--gris)">79% · $12.310.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:79%;background:var(--exito);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">Agosto 2026</span><span style="color:var(--gris)">69% · $10.760.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:69%;background:var(--alerta);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">Septiembre 2026</span><span style="color:var(--gris)">75% · $11.820.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:75%;background:var(--azul);border-radius:5px"></div></div>
+                  </div>
+                  <p style="font-size:.8rem;color:var(--gris);margin-top:14px;line-height:1.6">
+                    La recaudación repuntó 6 puntos respecto de agosto tras el primer envío masivo de recordatorios
+                    automáticos el 25/08.</p>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="ph"><h3>Composición de la morosidad</h3></div>
+                <div class="pb">
+                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">1 a 30 días</span><span style="color:var(--gris)">8 unidades · $438.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:44%;background:var(--alerta);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">31 a 60 días</span><span style="color:var(--gris)">5 unidades · $287.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:28%;background:var(--alerta);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">61 a 90 días</span><span style="color:var(--gris)">3 unidades · $168.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:17%;background:var(--error);border-radius:5px"></div></div>
+                  </div>                  <div style="margin-bottom:13px">
+                    <div style="display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px">
+                      <span style="font-weight:600">Más de 90 días</span><span style="color:var(--gris)">2 unidades · $107.000</span></div>
+                    <div style="height:9px;background:var(--fondo);border-radius:5px;overflow:hidden">
+                      <div style="height:100%;width:11%;background:var(--error);border-radius:5px"></div></div>
+                  </div>
+                  <div class="resumen" style="margin-top:14px">
+                    <div class="r"><span>Total en morosidad</span><span style="font-weight:600">$1.000.000</span></div>
+                    <div class="r"><span>Unidades afectadas</span><span>18 de 160 · 11,3%</span></div>
+                    <div class="r"><span>Interés devengado</span><span>$46.200</span></div>
+                    <div class="r"><span>Con convenio vigente</span><span>3 unidades</span></div>
+                  </div>
+                  <button class="btn sec" onclick="dGo('d-moros')">Gestionar cobranza</button>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!-- MODAL NUEVO RESIDENTE -->
+      <div class="modal" id="mod-resid" role="dialog" aria-modal="true" aria-labelledby="mod-t">
+        <div class="box">
+          <div class="mh"><h3 id="mod-t">Nuevo residente</h3>
+            <button onclick="cerrar('mod-resid')" aria-label="Cerrar">×</button></div>
+          <div class="mb">
+            <div id="mod-err" style="display:none" class="msg-err">
+              <span>⚠</span><span>Revise los campos marcados: el RUT ya está registrado en la unidad 0705.</span></div>
+            <div class="grid2">
+              <div class="campo"><label class="req" for="r-nom">Nombre completo</label>
+                <input class="inp" id="r-nom" placeholder="Ej.: Ana Rojas Vergara"></div>
+              <div class="campo"><label class="req" for="r-rut">RUT</label>
+                <input class="inp" id="r-rut" placeholder="12.345.678-9">
+                <span class="hint">Debe ser único en el sistema</span></div>
+              <div class="campo"><label class="req" for="r-dep">Departamento</label>
+                <select class="inp" id="r-dep"><option>Seleccione…</option><option>1204 · Torre A</option>
+                  <option>0803 · Torre A</option><option>1501 · Torre B</option></select></div>
+              <div class="campo"><label class="req" for="r-tip">Tipo de residencia</label>
+                <select class="inp" id="r-tip"><option>Seleccione…</option><option>Propietario</option>
+                  <option>Arrendatario</option></select>
+                <span class="hint">Define su participación en gastos extraordinarios</span></div>
+              <div class="campo"><label for="r-tel">Teléfono</label>
+                <input class="inp" id="r-tel" placeholder="+56 9 0000 0000"></div>
+              <div class="campo"><label class="req" for="r-mail">Correo electrónico</label>
+                <input class="inp" id="r-mail" type="email" placeholder="nombre@correo.cl">
+                <span class="hint">Se usará para enviar avisos de cobro</span></div>
+            </div>
+            <div class="campo"><label for="r-eme">Contacto de emergencia</label>
+              <input class="inp" id="r-eme" placeholder="Nombre y teléfono"></div>
+          </div>
+          <div class="mf"><button class="btn sec" onclick="cerrar('mod-resid')">Cancelar</button>
+            <button class="btn" onclick="guardarResid()">Guardar residente</button></div>
+        </div>
+      </div>
+
+      <div class="toast" id="d-toast"><span class="ok">✓</span><span id="d-toast-t"></span></div>
+    </div>
+  </div>
+  <div class="cap" style="margin-top:12px;max-width:100%;text-align:left">
+    <b>Perfil Administrador · escritorio 1460 × 800</b>
+    Cinco vistas navegables. El menú lateral cambia de sección sin recargar; los formularios validan y el envío de
+    avisos confirma con retroalimentación inmediata.</div>
+</div>
+<!-- ==================== DOCUMENTACION DE DISEÑO ==================== -->
+<div class="seccion">
+  <h2>Sistema de diseño y accesibilidad</h2>
+  <p class="sub">Decisiones verificables que sustentan los criterios de accesibilidad y consistencia</p>
+  <div class="fichas">
+    <div class="ficha">
+      <h4>Paleta y contraste <em>WCAG 2.1</em></h4>
+      <p>Todos los pares de texto y fondo superan el mínimo AA de 4,5:1; los principales alcanzan AAA.</p>
+      <div class="paleta">
+        <div class="sw"><div class="c" style="background:#1B4D89"></div><div class="n">Primario</div><div class="r">8,50:1 AAA</div></div>
+        <div class="sw"><div class="c" style="background:#1A2332"></div><div class="n">Tinta</div><div class="r">15,78:1 AAA</div></div>
+        <div class="sw"><div class="c" style="background:#5A6472"></div><div class="n">Secundario</div><div class="r">6,00:1 AA</div></div>
+        <div class="sw"><div class="c" style="background:#1B6E43"></div><div class="n">Éxito</div><div class="r">6,25:1 AA</div></div>
+        <div class="sw"><div class="c" style="background:#A15C00"></div><div class="n">Alerta</div><div class="r">5,19:1 AA</div></div>
+        <div class="sw"><div class="c" style="background:#B3261E"></div><div class="n">Error</div><div class="r">6,54:1 AA</div></div>
+      </div>
+    </div>
+    <div class="ficha">
+      <h4>Tipografía <em>Sistema</em></h4>
+      <p>Pila de fuentes nativas (Segoe UI, San Francisco, Roboto) con dígitos de ancho uniforme para alinear montos en tablas. Al no depender de una descarga externa, la interfaz renderiza sin parpadeo y funciona sin conexión.</p>
+      <ul>
+        <li>Cuerpo base 16 px, nunca bajo 12 px</li>
+        <li>Escala 12 · 13 · 14 · 16 · 20 · 24 · 34 px</li>
+        <li>Interlineado 1,5 en textos largos</li>
+        <li>Pesos 400 / 500 / 600 / 700</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h4>Accesibilidad operable</h4>
+      <ul>
+        <li>Foco visible de 3 px en todo elemento interactivo</li>
+        <li>Área táctil mínima de 44 × 44 px en móvil</li>
+        <li>Estado nunca comunicado solo por color: cada etiqueta lleva texto e ícono</li>
+        <li>Etiquetas asociadas a cada campo mediante <code>label for</code></li>
+        <li>Campos obligatorios marcados con asterisco y color</li>
+        <li><code>aria-label</code> en botones de solo ícono</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h4>Minimización de errores</h4>
+      <ul>
+        <li>Validación con mensaje específico, no genérico</li>
+        <li>Intentos restantes visibles antes del bloqueo</li>
+        <li>Acciones destructivas piden confirmación</li>
+        <li>Valores por defecto sensatos en formularios</li>
+        <li>Texto de ayuda bajo los campos que lo requieren</li>
+        <li>Idempotencia: el mismo número de transacción no duplica el pago</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="seccion">
+  <h2>Aplicación del modelo ISO/IEC 25010</h2>
+  <p class="sub">Cómo el diseño del prototipo responde a cuatro características de calidad del producto</p>
+  <div class="fichas">
+    <div class="ficha">
+      <h4>Usabilidad</h4>
+      <p><b>Capacidad de aprendizaje:</b> el flujo de pago se completa en tres pasos con progreso visible.
+      <b>Operabilidad:</b> menú lateral persistente y barra inferior fija mantienen la orientación.
+      <b>Protección frente a errores:</b> validación temprana y confirmación en acciones irreversibles.
+      <b>Estética:</b> jerarquía visual que sitúa el saldo adeudado como elemento dominante.</p>
+    </div>
+    <div class="ficha">
+      <h4>Eficiencia de desempeño</h4>
+      <p><b>Comportamiento temporal:</b> la información crítica —saldo y vencimiento— aparece sin scroll ni navegación
+      adicional. <b>Utilización de recursos:</b> tablas paginadas de 5 en 5 en lugar de cargar las 160 unidades.
+      <b>Capacidad:</b> filtros y búsqueda evitan recorrer listados completos, y el envío masivo de avisos se
+      programa fuera de la franja de mayor carga.</p>
+    </div>
+    <div class="ficha">
+      <h4>Mantenibilidad</h4>
+      <p><b>Modularidad:</b> componentes reutilizables (tarjeta, chip de estado, campo, alerta) definidos una vez y
+      aplicados en las nueve pantallas. <b>Reusabilidad:</b> variables de color y tipografía centralizadas, de modo
+      que un cambio de paleta se propaga sin editar pantalla por pantalla. <b>Modificabilidad:</b> la estructura del
+      prototipo refleja la separación en capas del DAS.</p>
+    </div>
+    <div class="ficha">
+      <h4>Accesibilidad <em>dentro de usabilidad</em></h4>
+      <p>Contraste verificado sobre el mínimo AA, tipografía nunca inferior a 12 px, foco visible, áreas táctiles de
+      44 px y estados comunicados con texto además de color, de modo que un usuario con daltonismo distinga una cuota
+      morosa de una pagada. Etiquetas y <code>aria-label</code> permiten el uso con lector de pantalla.</p>
+    </div>
+  </div>
+</div>
+
+<div class="seccion">
+  <h2>Trazabilidad con las etapas anteriores</h2>
+  <p class="sub">Cada pantalla responde a una necesidad levantada en la ideación y a un requisito del DAS</p>
+  <div class="panel" style="max-width:100%">
+    <div class="pb" style="padding:0">
+      <table class="dt">
+        <thead><tr><th>Pantalla</th><th>Funcionalidad clave</th><th>Necesidad de usuario</th><th>Requisito</th></tr></thead>
+        <tbody>
+          <tr><td><b>M1 / D1</b> Inicio de sesión</td><td>1. Inicio de sesión</td>
+            <td>N-11 · acceso diferenciado por rol</td><td>RF-01 · RNF-02</td></tr>
+          <tr><td><b>D3</b> Residentes</td><td>2. Registro de residentes</td>
+            <td>N-10 · datos centralizados y al día</td><td>RF-02 · RF-03</td></tr>
+          <tr><td><b>M2</b> Estado de cuenta</td><td>3. Cuotas y pagos</td>
+            <td>N-01 · conocer el saldo en cualquier momento</td><td>RF-10</td></tr>
+          <tr><td><b>M3</b> Detalle del prorrateo</td><td>3. Cuotas y pagos</td>
+            <td>N-02 · entender de dónde sale el monto</td><td>RF-05</td></tr>
+          <tr><td><b>M4</b> Pago en línea</td><td>3. Cuotas y pagos</td>
+            <td>N-03 y N-06 · pagar sin traslado y conservar comprobante</td><td>RF-07 · RF-08</td></tr>
+          <tr><td><b>D4</b> Cuotas y pagos</td><td>3. Cuotas y pagos</td>
+            <td>N-07 · calcular el prorrateo sin errores</td><td>RF-04 · RF-05 · RF-11</td></tr>
+          <tr><td><b>M5</b> Alertas</td><td>4. Recordatorios por morosidad</td>
+            <td>N-04 · recibir aviso antes del vencimiento</td><td>RF-06</td></tr>
+          <tr><td><b>D5</b> Recordatorios</td><td>4. Recordatorios por morosidad</td>
+            <td>N-08 y N-09 · detectar morosos y dejar registro del aviso</td><td>RF-06 · RF-09</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<p style="text-align:center;color:var(--gris);font-size:.8rem;margin-top:40px;line-height:1.7">
+  Prototipo interactivo de alta fidelidad · GRY2203 Ingeniería de Software II · Semana 7<br>
+  Marcelo Bernabé Díaz Canales · Francisco Javier Parra Andía · Analista Programador · Duoc UC<br>
+  Profesor José Luis Martínez Opazo
+</p>
+</div>
+<script>
+/* ---------- navegación móvil ---------- */
+function mGo(id){
+  document.querySelectorAll('#movil .vista').forEach(v=>v.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  const c=document.getElementById(id).querySelector('.cuerpo'); if(c) c.scrollTop=0;
+}
+function mLogin(){
+  const p=document.getElementById('m-pass'), e=document.getElementById('m-err');
+  if(!p.value.trim()){
+    p.classList.add('err'); e.style.display='flex'; p.focus();
+    e.scrollIntoView({behavior:'smooth',block:'nearest'});
+    return;
+  }
+  p.classList.remove('err'); e.style.display='none';
+  mGo('m-cuenta');
+}
+function mPagar(){ mGo('m-ok'); }
+function pick(el){
+  el.parentElement.querySelectorAll('.opcion').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel');
+}
+
+/* ---------- navegación escritorio ---------- */
+const urls={'d-login':'/login','d-panel':'/panel','d-resid':'/residentes','d-deptos':'/departamentos','d-gastos':'/gastos','d-cuotas':'/cuotas','d-moros':'/morosidad','d-recor':'/recordatorios','d-infor':'/informes'};
+function dGo(id){
+  document.querySelectorAll('#desk .dvista').forEach(v=>v.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  document.getElementById('d-url').textContent=urls[id]||'';
+  const m=document.getElementById(id).querySelector('.dmain'); if(m) m.scrollTop=0;
+}
+function dLogin(){
+  const p=document.getElementById('d-pass'), e=document.getElementById('d-err');
+  if(!p.value.trim()){ p.classList.add('err'); e.style.display='flex'; p.focus(); return; }
+  p.classList.remove('err'); e.style.display='none';
+  dGo('d-panel');
+}
+
+/* ---------- modal ---------- */
+function abrir(id){ document.getElementById(id).classList.add('on'); }
+function cerrar(id){
+  document.getElementById(id).classList.remove('on');
+  document.getElementById('mod-err').style.display='none';
+  document.querySelectorAll('#mod-resid .inp').forEach(i=>i.classList.remove('err'));
+}
+function guardarResid(){
+  const nom=document.getElementById('r-nom'), rut=document.getElementById('r-rut'),
+        mail=document.getElementById('r-mail'), err=document.getElementById('mod-err');
+  let falla=false;
+  [nom,rut,mail].forEach(c=>{ if(!c.value.trim()){ c.classList.add('err'); falla=true; } else c.classList.remove('err'); });
+  if(falla){ err.querySelector('span:last-child').innerHTML='Complete los campos obligatorios marcados en rojo.';
+    err.style.display='flex'; return; }
+  cerrar('mod-resid');
+  toast('Residente registrado correctamente en la unidad seleccionada');
+}
+
+/* ---------- selección de morosos ---------- */
+function tgl(el){
+  el.classList.toggle('on');
+  el.innerHTML = el.classList.contains('on') ? '✓' : '&nbsp;';
+  cuenta();
+}
+function selTodas(){
+  document.querySelectorAll('#tb-moros .chk').forEach(c=>{ c.classList.add('on'); c.innerHTML='✓'; });
+  cuenta();
+}
+function cuenta(){
+  const n=document.querySelectorAll('#tb-moros .chk.on').length;
+  document.getElementById('n-sel').textContent=n;
+}
+function tglCanal(el){
+  el.classList.toggle('on');
+  const c=el.querySelector('.chk');
+  c.classList.toggle('on');
+  c.innerHTML = c.classList.contains('on') ? '✓' : '&nbsp;';
+}
+function enviar(){
+  const n=document.querySelectorAll('#tb-moros .chk.on').length;
+  if(n===0){ toast('Seleccione al menos una unidad antes de enviar'); return; }
+  toast(n+' aviso(s) enviado(s) por correo, SMS y notificación en la aplicación');
+}
+
+/* ---------- pantalla completa ---------- */
+function fs(){
+  const d=document.querySelector('.desk'), b=document.getElementById('btn-fs');
+  if(!document.fullscreenElement){
+    d.requestFullscreen ? d.requestFullscreen() : (d.webkitRequestFullscreen && d.webkitRequestFullscreen());
+  } else { document.exitFullscreen(); }
+}
+document.addEventListener('fullscreenchange',()=>{
+  const d=document.querySelector('.desk'), s=document.querySelector('.deskscreen'),
+        b=document.getElementById('btn-fs');
+  if(document.fullscreenElement){
+    s.style.height='calc(100vh - 38px)'; d.style.maxWidth='100%'; d.style.borderRadius='0';
+    b.textContent='⤡ Salir';
+  } else {
+    s.style.height='800px'; d.style.maxWidth='1460px'; d.style.borderRadius='12px';
+    b.textContent='⛶ Pantalla completa';
+  }
+});
+
+/* ---------- toast contextual ---------- */
+function toast(txt){
+  const enDesk = document.querySelector('#desk .dvista.on') &&
+                 !document.querySelector('#desk .dvista.on').id.includes('login');
+  const id = enDesk ? 'd' : 'm';
+  const t=document.getElementById(id+'-toast');
+  document.getElementById(id+'-toast-t').textContent=txt;
+  t.classList.add('on');
+  clearTimeout(t._t);
+  t._t=setTimeout(()=>t.classList.remove('on'),3200);
+}
+
+/* ---------- limpiar error al escribir ---------- */
+document.querySelectorAll('.inp').forEach(i=>{
+  i.addEventListener('input',()=>{
+    i.classList.remove('err');
+    const box=i.closest('.vista,.dvista,.mb');
+    if(box){ const e=box.querySelector('.msg-err'); if(e) e.style.display='none'; }
+  });
+});
+
+/* ---------- cerrar modal con Escape ---------- */
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.querySelectorAll('.modal.on').forEach(m=>cerrar(m.id));
+});
+</script>
+</body>
+</html>
