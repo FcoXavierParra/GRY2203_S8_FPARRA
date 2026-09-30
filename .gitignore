@@ -1,0 +1,36 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporales de Office (bloqueo de archivo abierto)
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Respaldos de Draw.io
+*.drawio.bkp
+*.drawio.dtmp
+
+# Python
+__pycache__/
+*.pyc
+
+# Dependencias y compilados (si se implementa)
+node_modules/
+target/
+build/
+dist/
+*.class
+*.jar
+*.war
+
+# Configuración local
+.env
+*.local

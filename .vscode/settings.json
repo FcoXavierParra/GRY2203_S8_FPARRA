@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "**/~$*": true,
+    "**/*.bkp": true,
+    "**/__pycache__": true
+  },
+  "files.associations": { "*.drawio": "xml" },
+  "hediet.vscode-drawio.theme": "min",
+  "editor.renderWhitespace": "boundary",
+  "files.trimTrailingWhitespace": true
+}

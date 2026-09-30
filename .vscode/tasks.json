@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1 · Validar repositorio (antes de subir)",
+      "type": "shell",
+      "command": "python",
+      "args": ["herramientas/validar_repositorio.py"],
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "2 · Verificar consistencia entre artefactos",
+      "type": "shell",
+      "command": "python",
+      "args": ["herramientas/verificar_consistencia.py"],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "3 · Validar TODO",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "1 · Validar repositorio (antes de subir)",
+        "2 · Verificar consistencia entre artefactos"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "4 · Ver el prototipo en el navegador",
+      "type": "shell",
+      "windows": { "command": "start", "args": ["", "index.html"] },
+      "command": "open",
+      "args": ["index.html"],
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "5 · Subir a GitHub (historial por fases)",
+      "type": "shell",
+      "command": "python",
+      "args": ["herramientas/subir_a_github.py"],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}
