@@ -1,0 +1,1860 @@
+<mxfile host="app.diagrams.net" pages="27">
+  <diagram name="I1. Ideación — Personas y mapa de empatía" id="vn4CcFHVXlRDN03dDeh9">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1560" pageHeight="1000" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n4322_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Ideación inicial — Arquetipos de usuario (personas) y mapa de empatía" vertex="1">
+          <mxGeometry height="40" width="1500" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="400" width="720" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="Ana, 41 años — Propietaria, depto 1204" vertex="1">
+          <mxGeometry height="30" width="720" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_4" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contexto: trabaja fuera todo el día, dos hijos. Usa el teléfono para casi todo." vertex="1">
+          <mxGeometry height="40" width="690" x="62" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_5" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Necesita:&amp;nbsp;&lt;div&gt;• Saber cuánto debe sin llamar a la administración.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Pagar desde el teléfono, a cualquier hora.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Entender de dónde sale el monto de su cuota.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="62" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_6" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Le frustra:&amp;nbsp;&lt;div&gt;• Enterarse de que debe cuando ya hay interés.&amp;nbsp;&lt;div&gt;• Que el monto cambie sin explicación.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Tener que ir a la oficina en horario laboral.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="416" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_7" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="694" x="62" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_8" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Cita representativa" vertex="1">
+          <mxGeometry height="16" width="200" x="62" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_9" parent="1" style="text;html=1;align=left;fontSize=10;fontStyle=2;fontColor=#555555;" value="“Me entero de que debo cuando ya me cobraron interés.”" vertex="1">
+          <mxGeometry height="26" width="690" x="62" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Pantallas que lo resuelven: M1, M2, M3, M4, M5" vertex="1">
+          <mxGeometry height="20" width="690" x="62" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_11" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Técnica aplicada: entrevista breve y mapa de empatía (qué piensa, siente, hace y le duele)." vertex="1">
+          <mxGeometry height="20" width="690" x="62" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_12" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="400" width="720" x="810" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="Luis, 29 años — Arrendatario, depto 0803" vertex="1">
+          <mxGeometry height="30" width="720" x="810" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_14" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contexto: arrienda hace 8 meses, primera vez que vive en edificio con gastos comunes." vertex="1">
+          <mxGeometry height="40" width="690" x="822" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_15" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Necesita:&amp;nbsp;&lt;div&gt;• Distinguir qué le corresponde pagar a él y qué al dueño.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Un recordatorio antes del vencimiento, no después.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Comprobante digital de cada pago.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="822" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_16" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Le frustra:&amp;nbsp;&lt;div&gt;• No saber si un gasto extraordinario le aplica.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Perder el comprobante en papel.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Los avisos que llegan cuando ya está atrasado.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="1176" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_17" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="694" x="822" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_18" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Cita representativa" vertex="1">
+          <mxGeometry height="16" width="200" x="822" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_19" parent="1" style="text;html=1;align=left;fontSize=10;fontStyle=2;fontColor=#555555;" value="“No sé si el arreglo del ascensor me toca a mí o al dueño.”" vertex="1">
+          <mxGeometry height="26" width="690" x="822" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_20" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Pantallas que lo resuelven: M2, M3, M5" vertex="1">
+          <mxGeometry height="20" width="690" x="822" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_21" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Técnica aplicada: entrevista breve y mapa de empatía (qué piensa, siente, hace y le duele)." vertex="1">
+          <mxGeometry height="20" width="690" x="822" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_22" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="400" width="720" x="50" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="Patricia, 55 años — Administradora del edificio" vertex="1">
+          <mxGeometry height="30" width="720" x="50" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_24" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contexto: administra 160 unidades con planillas de cálculo y avisos impresos." vertex="1">
+          <mxGeometry height="40" width="690" x="62" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_25" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Necesita:&amp;nbsp;&lt;div&gt;• Calcular el prorrateo sin errores ni horas de planilla.&amp;nbsp;&lt;div&gt;• Ver de un vistazo quién está moroso y hace cuánto.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Enviar avisos masivos y dejar registro de ello.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="62" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_26" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Le frustra:&amp;nbsp;&lt;div&gt;• Recalcular todo cuando llega una factura atrasada.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Los reclamos por montos que no puede explicar.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• No tener respaldo de a quién avisó y cuándo.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="416" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_27" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="694" x="62" y="706" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_28" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Cita representativa" vertex="1">
+          <mxGeometry height="16" width="200" x="62" y="714" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_29" parent="1" style="text;html=1;align=left;fontSize=10;fontStyle=2;fontColor=#555555;" value="“Paso dos días al mes cuadrando la planilla del prorrateo.”" vertex="1">
+          <mxGeometry height="26" width="690" x="62" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_30" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Pantallas que lo resuelven: D1, D2, D3, D4" vertex="1">
+          <mxGeometry height="20" width="690" x="62" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_31" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Técnica aplicada: entrevista breve y mapa de empatía (qué piensa, siente, hace y le duele)." vertex="1">
+          <mxGeometry height="20" width="690" x="62" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_32" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="400" width="720" x="810" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="Marco, 38 años — Conserje" vertex="1">
+          <mxGeometry height="30" width="720" x="810" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_34" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contexto: turno de 12 horas, atiende consultas y recibe pagos en efectivo o transferencia." vertex="1">
+          <mxGeometry height="40" width="690" x="822" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_35" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Necesita: •&lt;div&gt;&amp;nbsp;Consultar rápido si un residente está al día.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Registrar un pago presencial sin errores.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Acceso acotado, sin responsabilidad sobre montos.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="822" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_36" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Le frustra:&amp;nbsp;&lt;div&gt;• Que le pregunten cosas que no puede responder.&amp;nbsp;&lt;/div&gt;&lt;div&gt;• Anotar pagos en cuaderno y que se pierdan.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="1176" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_37" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="694" x="822" y="706" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_38" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Cita representativa" vertex="1">
+          <mxGeometry height="16" width="200" x="822" y="714" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_39" parent="1" style="text;html=1;align=left;fontSize=10;fontStyle=2;fontColor=#555555;" value="“Me preguntan por la deuda y tengo que llamar a la oficina.”" vertex="1">
+          <mxGeometry height="26" width="690" x="822" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_40" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Pantallas que lo resuelven: D1, D3 (acceso restringido)" vertex="1">
+          <mxGeometry height="20" width="690" x="822" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_41" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Técnica aplicada: entrevista breve y mapa de empatía (qué piensa, siente, hace y le duele)." vertex="1">
+          <mxGeometry height="20" width="690" x="822" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="n4322_42" parent="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#555555;" value="Técnica 1 — Construcción de personas y mapa de empatía. Permite pasar de &#39;los residentes&#39; como masa indiferenciada a cuatro perfiles con necesidades y frustraciones distintas y verificables contra el caso de negocio." vertex="1">
+          <mxGeometry height="30" width="1440" x="50" y="940" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="I2. Ideación — Brainstorming estructurado y mapa de ofertas" id="-yvC5_cxwp5nYZrL0bOn">
+    <mxGraphModel dx="2377" dy="991" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="1050" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n4703_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Ideación inicial — Brainstorming estructurado (divergencia) y mapa de ofertas (convergencia)" vertex="1">
+          <mxGeometry height="40" width="1500" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_2" parent="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#555555;" value="Fase divergente — brainwriting: cada integrante escribió ideas en silencio antes de compartirlas, para evitar que una sola voz dominara." vertex="1">
+          <mxGeometry height="22" width="1000" x="50" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Estado de cuenta en tiempo real" vertex="1">
+          <mxGeometry height="72" width="132" x="50" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Pago en línea con tarjeta" vertex="1">
+          <mxGeometry height="72" width="132" x="196" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Recordatorio automático antes del vencimiento" vertex="1">
+          <mxGeometry height="72" width="132" x="342" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Alerta de morosidad" vertex="1">
+          <mxGeometry height="72" width="132" x="488" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Detalle del prorrateo visible" vertex="1">
+          <mxGeometry height="72" width="132" x="634" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Comprobante digital descargable" vertex="1">
+          <mxGeometry height="72" width="132" x="780" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Convenio de pago en línea" vertex="1">
+          <mxGeometry height="72" width="132" x="926" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Aviso masivo desde el panel" vertex="1">
+          <mxGeometry height="72" width="132" x="1072" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Historial de pagos por unidad" vertex="1">
+          <mxGeometry height="72" width="132" x="1218" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Cálculo automático del prorrateo" vertex="1">
+          <mxGeometry height="72" width="132" x="1364" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Informe de recaudación" vertex="1">
+          <mxGeometry height="72" width="132" x="50" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Registro de residentes" vertex="1">
+          <mxGeometry height="72" width="132" x="196" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Pago presencial registrado por conserje" vertex="1">
+          <mxGeometry height="72" width="132" x="342" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Conciliación bancaria" vertex="1">
+          <mxGeometry height="72" width="132" x="488" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Notificación push al residente" vertex="1">
+          <mxGeometry height="72" width="132" x="634" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Panel de indicadores" vertex="1">
+          <mxGeometry height="72" width="132" x="780" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Exportar informes a PDF/Excel" vertex="1">
+          <mxGeometry height="72" width="132" x="926" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Chat con la administración" vertex="1">
+          <mxGeometry height="72" width="132" x="1072" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Reserva de espacios comunes" vertex="1">
+          <mxGeometry height="72" width="132" x="1218" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#aaaaaa;fontSize=9;align=center;verticalAlign=middle;fontColor=#333333;" value="Votación de asamblea en línea" vertex="1">
+          <mxGeometry height="72" width="132" x="1364" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_23" parent="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#555555;" value="Fase convergente — mapa de ofertas: las ideas se ubicaron según valor para el usuario y esfuerzo de implementación, para decidir qué entra en el prototipo." vertex="1">
+          <mxGeometry height="22" width="1100" x="50" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_24" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#888888;" value="" vertex="1">
+          <mxGeometry height="600" width="932" x="170" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_25" parent="1" style="line;strokeColor=#bbbbbb;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1" width="900" x="170" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_26" parent="1" style="line;strokeColor=#bbbbbb;dashed=1;" value="" vertex="1">
+          <mxGeometry height="600" width="1" x="620" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_27" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;horizontal=0;fontColor=#333333;" value="Mayor valor para el usuario  ▲" vertex="1">
+          <mxGeometry height="280" width="140" x="20" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_28" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Menor esfuerzo  ◀" vertex="1">
+          <mxGeometry height="20" width="300" x="170" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_29" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="▶  Mayor esfuerzo" vertex="1">
+          <mxGeometry height="20" width="300" x="770" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_30" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="PRIORITARIAS — entran al prototipo" vertex="1">
+          <mxGeometry height="20" width="420" x="180" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_31" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="APUESTAS — versiones siguientes" vertex="1">
+          <mxGeometry height="20" width="420" x="630" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_32" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="SECUNDARIAS" vertex="1">
+          <mxGeometry height="20" width="420" x="180" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_33" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="DESCARTADAS de esta versión" vertex="1">
+          <mxGeometry height="20" width="420" x="630" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Estado de cuenta en tiempo real" vertex="1">
+          <mxGeometry height="66" width="130" x="210" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Alerta de morosidad" vertex="1">
+          <mxGeometry height="66" width="130" x="360" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Recordatorio automático" vertex="1">
+          <mxGeometry height="66" width="130" x="510" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Detalle del prorrateo" vertex="1">
+          <mxGeometry height="66" width="130" x="210" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Registro de residentes" vertex="1">
+          <mxGeometry height="66" width="130" x="360" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Comprobante digital" vertex="1">
+          <mxGeometry height="66" width="130" x="510" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Historial de pagos" vertex="1">
+          <mxGeometry height="66" width="130" x="210" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Aviso masivo desde el panel" vertex="1">
+          <mxGeometry height="66" width="130" x="360" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Pago en línea con tarjeta" vertex="1">
+          <mxGeometry height="66" width="130" x="650" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#555555;strokeWidth=2;fontSize=9;align=center;fontColor=#111111;" value="Cálculo automático del prorrateo" vertex="1">
+          <mxGeometry height="66" width="130" x="800" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Convenio de pago en línea" vertex="1">
+          <mxGeometry height="66" width="130" x="950" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Conciliación bancaria" vertex="1">
+          <mxGeometry height="66" width="130" x="650" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Informe de recaudación" vertex="1">
+          <mxGeometry height="66" width="130" x="800" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Panel de indicadores" vertex="1">
+          <mxGeometry height="66" width="130" x="950" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Exportar a PDF/Excel" vertex="1">
+          <mxGeometry height="66" width="130" x="210" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Pago presencial por conserje" vertex="1">
+          <mxGeometry height="66" width="130" x="360" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Chat con la administración" vertex="1">
+          <mxGeometry height="66" width="130" x="650" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Reserva de espacios comunes" vertex="1">
+          <mxGeometry height="66" width="130" x="800" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Votación de asamblea" vertex="1">
+          <mxGeometry height="66" width="130" x="950" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bbbbbb;fontSize=9;align=center;fontColor=#555555;" value="Notificación push" vertex="1">
+          <mxGeometry height="66" width="130" x="510" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="n4703_54" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Recuadro con borde grueso = seleccionada para el prototipo de baja fidelidad." vertex="1">
+          <mxGeometry height="20" width="600" x="170" y="954" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="I3. Ideación — Storytelling y storyboard" id="T2TAnuH8tbHM7aQHwHWY">
+    <mxGraphModel dx="1783" dy="743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="760" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n3072_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Ideación inicial — Storytelling: el recorrido de Ana en el nuevo sistema" vertex="1">
+          <mxGeometry height="40" width="1500" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="420" width="276" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="1. El problema actual" vertex="1">
+          <mxGeometry height="28" width="276" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_4" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#aaaaaa;fontSize=10;fontColor=#888888;" value="[ viñeta ]" vertex="1">
+          <mxGeometry height="90" width="120" x="128" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_5" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Ana descubre por un cartel en el ascensor que su&amp;nbsp;&lt;div&gt;departamento aparece en la lista de morosos.&lt;/div&gt;&lt;div&gt;&amp;nbsp;Nadie le avisó antes.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="252" x="62" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_6" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="252" x="62" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_7" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontStyle=2;fontColor=#555555;" value="Frustración: se entera tarde y con interés." vertex="1">
+          <mxGeometry height="44" width="252" x="62" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_8" parent="1" style="text;html=1;align=center;fontSize=14;fontColor=#888888;" value="▶" vertex="1">
+          <mxGeometry height="20" width="18" x="328" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_9" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="420" width="276" x="346" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="2. Llega el recordatorio" vertex="1">
+          <mxGeometry height="28" width="276" x="346" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_11" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#aaaaaa;fontSize=10;fontColor=#888888;" value="[ viñeta ]" vertex="1">
+          <mxGeometry height="90" width="120" x="424" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_12" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Tres días antes del vencimiento recibe&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;una notificación&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&amp;nbsp;en el teléfono con el monto exacto y la fecha límite.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="252" x="358" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_13" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="252" x="358" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_14" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontStyle=2;fontColor=#555555;" value="Necesidad cubierta: aviso oportuno (M5)." vertex="1">
+          <mxGeometry height="44" width="252" x="358" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_15" parent="1" style="text;html=1;align=center;fontSize=14;fontColor=#888888;" value="▶" vertex="1">
+          <mxGeometry height="20" width="18" x="624" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_16" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="420" width="276" x="642" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="3. Revisa el detalle" vertex="1">
+          <mxGeometry height="28" width="276" x="642" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_18" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#aaaaaa;fontSize=10;fontColor=#888888;" value="[ viñeta ]" vertex="1">
+          <mxGeometry height="90" width="120" x="720" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_19" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Abre la aplicación y ve su saldo.&amp;nbsp;&lt;div&gt;Toca la cuota y aparece el desglose:&amp;nbsp;&lt;/div&gt;&lt;div&gt;agua, gas, ascensores, y su coeficiente aplicado.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="252" x="654" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_20" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="252" x="654" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_21" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontStyle=2;fontColor=#555555;" value="Necesidad cubierta: transparencia (M2, M3)." vertex="1">
+          <mxGeometry height="44" width="252" x="654" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_22" parent="1" style="text;html=1;align=center;fontSize=14;fontColor=#888888;" value="▶" vertex="1">
+          <mxGeometry height="20" width="18" x="920" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_23" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="420" width="276" x="938" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="4. Paga desde el sofá" vertex="1">
+          <mxGeometry height="28" width="276" x="938" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_25" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#aaaaaa;fontSize=10;fontColor=#888888;" value="[ viñeta ]" vertex="1">
+          <mxGeometry height="90" width="120" x="1016" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_26" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Elige pagar con tarjeta de débito.&amp;nbsp;&lt;div&gt;Tres pasos y recibe el comprobante digital&amp;nbsp;&lt;/div&gt;&lt;div&gt;en la misma pantalla.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="252" x="950" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_27" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="252" x="950" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_28" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontStyle=2;fontColor=#555555;" value="Necesidad cubierta: pago sin traslado (M4)." vertex="1">
+          <mxGeometry height="44" width="252" x="950" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_29" parent="1" style="text;html=1;align=center;fontSize=14;fontColor=#888888;" value="▶" vertex="1">
+          <mxGeometry height="20" width="18" x="1216" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_30" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="420" width="276" x="1234" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;fontSize=11;fontStyle=1;fontColor=#222222;" value="5. Del otro lado" vertex="1">
+          <mxGeometry height="28" width="276" x="1234" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_32" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#aaaaaa;fontSize=10;fontColor=#888888;" value="[ viñeta ]" vertex="1">
+          <mxGeometry height="90" width="120" x="1312" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_33" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;" value="Patricia ve el pago reflejado de inmediato en el panel&amp;nbsp;&lt;div&gt;y la unidad 1204 desaparece de la lista de morosidad.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="252" x="1246" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_34" parent="1" style="line;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="1" width="252" x="1246" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_35" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontStyle=2;fontColor=#555555;" value="Necesidad cubierta: control al día (D3, D4)." vertex="1">
+          <mxGeometry height="44" width="252" x="1246" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n3072_36" parent="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#555555;" value="Técnica 3 — Storytelling y storyboard. La narrativa permitió validar el orden de las pantallas antes de dibujarlas: el recordatorio debe llegar antes del vencimiento, y el detalle del prorrateo debe ser accesible desde el saldo, no en un menú aparte." vertex="1">
+          <mxGeometry height="40" width="1440" x="50" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="I4. Mapa de navegación del prototipo" id="BALBuvhqJbdLMtTq6rdp">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1500" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n3842_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Mapa de navegación — relación entre pantallas y funcionalidades clave" vertex="1">
+          <mxGeometry height="40" width="1440" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="RESIDENTE — móvil" vertex="1">
+          <mxGeometry height="26" width="560" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_3" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="M1 Inicio de sesión&amp;nbsp;&lt;div&gt;★ Funcionalidad 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="90" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_4" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="M2 Estado de cuenta e historial de pagos&amp;nbsp;&lt;div&gt;★ Funcionalidad 3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="395" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_5" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="M3 Detalle del prorrateo" vertex="1">
+          <mxGeometry height="80" width="170" x="694" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_6" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="M4 Pago en línea" vertex="1">
+          <mxGeometry height="70" width="170" x="694" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_7" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="M5 Alertas y recordatorios&amp;nbsp;&lt;div&gt;★ Funcionalidad 4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="395" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_8" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="ADMINISTRADOR — escritorio" vertex="1">
+          <mxGeometry height="26" width="560" x="90" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_9" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="D1 Inicio de sesión&amp;nbsp;&lt;div&gt;★ Funcionalidad 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="90" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_10" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="D2 Registro de residentes&lt;div&gt;&amp;nbsp;★ Funcionalidad 2&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="384" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_11" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="D3 Cuotas y pagos&lt;div&gt;&amp;nbsp;★ Funcionalidad 3&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="655" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_12" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#333333;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#111111;" value="D4 Recordatorios y alertas&amp;nbsp;&lt;div&gt;★ Funcionalidad 4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="963" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_13" edge="1" parent="1" source="n3842_3" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_4" value="autenticación correcta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_14" edge="1" parent="1" source="n3842_4" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_5" value="toca una cuota">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_15" edge="1" parent="1" source="n3842_5" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_6" value="pagar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_16" edge="1" parent="1" source="n3842_4" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_6" value="pagar ahora">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_17" edge="1" parent="1" source="n3842_4" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_7" value="campana">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_18" edge="1" parent="1" source="n3842_7" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_6" value="toca la alerta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_19" edge="1" parent="1" source="n3842_9" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_10" value="perfil administrador">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_20" edge="1" parent="1" source="n3842_10" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_21" edge="1" parent="1" source="n3842_11" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_12" value="gestionar morosidad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3842_22" edge="1" parent="1" source="n3842_11" style="endArrow=block;html=1;strokeColor=#666666;fontSize=9;fontColor=#555555;labelBackgroundColor=#ffffff;rounded=1;" target="n3842_10" value="ver residente">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_23" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="★ = una de las cuatro funcionalidades clave exigidas por el enunciado. Las cuatro están cubiertas en ambos contextos de pantalla, con el alcance que corresponde a cada perfil." vertex="1">
+          <mxGeometry height="46" width="700" x="90" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_24" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Cobertura de las funcionalidades exigidas" vertex="1">
+          <mxGeometry height="24" width="400" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Funcionalidad" vertex="1">
+          <mxGeometry height="28" width="250" x="900" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Pantallas" vertex="1">
+          <mxGeometry height="28" width="300" x="1150" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1. Inicio de sesión" vertex="1">
+          <mxGeometry height="46" width="250" x="900" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="M1 (móvil) · D1 (escritorio)" vertex="1">
+          <mxGeometry height="46" width="300" x="1150" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="2. Registro de residentes" vertex="1">
+          <mxGeometry height="46" width="250" x="900" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="D2 (formulario + tabla)" vertex="1">
+          <mxGeometry height="46" width="300" x="1150" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="3. Visualización de cuotas y pagos" vertex="1">
+          <mxGeometry height="46" width="250" x="900" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="M2, M3 (residente) · D3 (administrador)" vertex="1">
+          <mxGeometry height="46" width="300" x="1150" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="4. Recordatorios y alertas por morosidad" vertex="1">
+          <mxGeometry height="46" width="250" x="900" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="n3842_34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="M5 (recepción) · D4 (envío)" vertex="1">
+          <mxGeometry height="46" width="300" x="1150" y="318" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="P1. Móvil — Residente (flujo completo)" id="jBA5uzEUaROfQmI7EJ4N">
+    <mxGraphModel dx="1877" dy="782" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1720" pageHeight="820" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n9079_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Prototipo de baja fidelidad — Aplicación móvil del Residente" vertex="1">
+          <mxGeometry height="40" width="1660" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_2" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_3" parent="1" style="rounded=1;arcSize=50;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="8" width="80" x="150" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="M1 — Inicio de sesión" vertex="1">
+          <mxGeometry height="34" width="300" x="40" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_5" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="M1" vertex="1">
+          <mxGeometry height="22" width="300" x="40" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_6" parent="1" style="rounded=0;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;fontColor=#777777;" value="[ logo ]" vertex="1">
+          <mxGeometry height="50" width="100" x="140" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_7" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Gastos Comunes Nuevos Horizontes" vertex="1">
+          <mxGeometry height="34" width="220" x="80" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_8" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Usuario / RUT" vertex="1">
+          <mxGeometry height="16" width="240" x="70" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="12.345.678-9" vertex="1">
+          <mxGeometry height="34" width="240" x="70" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contraseña" vertex="1">
+          <mxGeometry height="16" width="240" x="70" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="••••••••" vertex="1">
+          <mxGeometry height="34" width="240" x="70" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_12" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="☐  Recordarme en este equipo" vertex="1">
+          <mxGeometry height="18" width="240" x="70" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_13" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Ingresar" vertex="1">
+          <mxGeometry height="40" width="240" x="70" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_14" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="¿Olvidó su contraseña?" vertex="1">
+          <mxGeometry height="20" width="240" x="70" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_15" parent="1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#666666;dashed=1;fontSize=9;fontColor=#555555;" value="⚠ Usuario o contraseña incorrectos" vertex="1">
+          <mxGeometry height="26" width="240" x="70" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_16" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Estado de error (solo referencia)" vertex="1">
+          <mxGeometry height="16" width="240" x="70" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_17" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="400" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_18" parent="1" style="rounded=1;arcSize=50;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="8" width="80" x="510" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="M2 — Mi estado de cuenta" vertex="1">
+          <mxGeometry height="34" width="300" x="400" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_20" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="M2" vertex="1">
+          <mxGeometry height="22" width="300" x="400" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_21" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Depto 1204  ·  Torre A" vertex="1">
+          <mxGeometry height="18" width="200" x="416" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_22" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#e0e0e0;strokeColor=#666666;fontSize=10;" value="🔔 2" vertex="1">
+          <mxGeometry height="22" width="50" x="635" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_23" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="SALDO TOTAL ADEUDADO  $ 100.470  Vencida el 05/09/2026" vertex="1">
+          <mxGeometry height="92" width="268" x="416" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_24" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Pagar ahora" vertex="1">
+          <mxGeometry height="38" width="268" x="416" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_25" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Historial de cuotas" vertex="1">
+          <mxGeometry height="18" width="150" x="416" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_26" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Ver todo" vertex="1">
+          <mxGeometry height="22" width="78" x="606" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="40" width="268" x="416" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_28" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Septiembre 2026" vertex="1">
+          <mxGeometry height="16" width="130" x="426" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_29" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="$ 98.500" vertex="1">
+          <mxGeometry height="14" width="130" x="426" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_30" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=9;fontColor=#333333;" value="Vencida" vertex="1">
+          <mxGeometry height="20" width="98" x="576" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="40" width="268" x="416" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_32" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Agosto 2026" vertex="1">
+          <mxGeometry height="16" width="130" x="426" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_33" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="$ 92.300" vertex="1">
+          <mxGeometry height="14" width="130" x="426" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_34" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#dddddd;strokeColor=#888888;fontSize=9;fontColor=#333333;" value="Pagada" vertex="1">
+          <mxGeometry height="20" width="98" x="576" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="40" width="268" x="416" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_36" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Julio 2026" vertex="1">
+          <mxGeometry height="16" width="130" x="426" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_37" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="$ 89.900" vertex="1">
+          <mxGeometry height="14" width="130" x="426" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_38" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#dddddd;strokeColor=#888888;fontSize=9;fontColor=#333333;" value="Pagada" vertex="1">
+          <mxGeometry height="20" width="98" x="576" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="40" width="268" x="416" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_40" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Junio 2026" vertex="1">
+          <mxGeometry height="16" width="130" x="426" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_41" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="$ 91.400" vertex="1">
+          <mxGeometry height="14" width="130" x="426" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_42" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#dddddd;strokeColor=#888888;fontSize=9;fontColor=#333333;" value="Pagada" vertex="1">
+          <mxGeometry height="20" width="98" x="576" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="Inicio   |   Cuotas   |   Pagar   |   Alertas" vertex="1">
+          <mxGeometry height="30" width="256" x="426" y="599" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_44" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="735" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_45" parent="1" style="rounded=1;arcSize=50;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="8" width="80" x="845" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="M3 — Detalle de la cuota" vertex="1">
+          <mxGeometry height="34" width="300" x="735" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_47" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="M3" vertex="1">
+          <mxGeometry height="22" width="300" x="735" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_48" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="← Volver" vertex="1">
+          <mxGeometry height="18" width="90" x="751" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_49" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Septiembre 2026" vertex="1">
+          <mxGeometry height="20" width="268" x="751" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_50" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Coeficiente de la unidad: 0,0072" vertex="1">
+          <mxGeometry height="16" width="268" x="751" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Concepto" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Monto" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Agua" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 21.400" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Electricidad comunes" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 18.900" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Gas" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 12.600" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Mantención ascensores" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 16.800" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Remuneraciones personal" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 22.100" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Insumos y aseo" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 6.700" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Subtotal del período" vertex="1">
+          <mxGeometry height="26" width="170" x="751" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="$ 98.500" vertex="1">
+          <mxGeometry height="26" width="98" x="921" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Interés por mora (12 días)" vertex="1">
+          <mxGeometry height="24" width="170" x="751" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 1.970" vertex="1">
+          <mxGeometry height="24" width="98" x="921" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_69" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="Así se calculó su cuota:&amp;nbsp;&lt;div&gt;gasto total del edificio × coeficiente de su unidad.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="268" x="751" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_70" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Pagar esta cuota" vertex="1">
+          <mxGeometry height="36" width="268" x="751" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_71" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="1058" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_72" parent="1" style="rounded=1;arcSize=50;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="8" width="80" x="1168" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="M4 — Pago en línea" vertex="1">
+          <mxGeometry height="34" width="300" x="1058" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_74" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="M4" vertex="1">
+          <mxGeometry height="22" width="300" x="1058" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_75" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="← Volver" vertex="1">
+          <mxGeometry height="18" width="90" x="1074" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_76" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Paso 2 de 3" vertex="1">
+          <mxGeometry height="18" width="94" x="1248" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_77" parent="1" style="rounded=1;fillColor=#eeeeee;strokeColor=#bbbbbb;" value="" vertex="1">
+          <mxGeometry height="8" width="268" x="1074" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_78" parent="1" style="rounded=1;fillColor=#999999;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="8" width="178" x="1074" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_79" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Resumen del pago" vertex="1">
+          <mxGeometry height="18" width="268" x="1074" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_80" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="Cuota septiembre 2026        $ 98.500&lt;div&gt;&amp;nbsp;Interés por mora                     $  1.970 ———————————————&amp;nbsp;&lt;/div&gt;&lt;div&gt;Total a pagar                         $100.470&lt;/div&gt;" vertex="1">
+          <mxGeometry height="86" width="268" x="1074" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_81" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Monto a pagar" vertex="1">
+          <mxGeometry height="16" width="268" x="1074" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="$ 100.470" vertex="1">
+          <mxGeometry height="34" width="268" x="1074" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_83" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="☐  Deseo abonar un monto parcial" vertex="1">
+          <mxGeometry height="18" width="268" x="1074" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_84" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Medio de pago" vertex="1">
+          <mxGeometry height="16" width="268" x="1074" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="◉  Tarjeta de débito" vertex="1">
+          <mxGeometry height="28" width="268" x="1074" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="○  Tarjeta de crédito" vertex="1">
+          <mxGeometry height="28" width="268" x="1074" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="○  Transferencia bancaria" vertex="1">
+          <mxGeometry height="28" width="268" x="1074" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_88" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Confirmar y pagar" vertex="1">
+          <mxGeometry height="40" width="268" x="1074" y="506" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_89" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Será redirigido a la pasarela de pago." vertex="1">
+          <mxGeometry height="18" width="268" x="1074" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_90" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="1375" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_91" parent="1" style="rounded=1;arcSize=50;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="8" width="80" x="1485" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="M5 — Alertas y recordatorios" vertex="1">
+          <mxGeometry height="34" width="300" x="1375" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_93" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="M5" vertex="1">
+          <mxGeometry height="22" width="300" x="1375" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_94" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Centro de notificaciones" vertex="1">
+          <mxGeometry height="18" width="200" x="1391" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_95" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="No leídas: 2" vertex="1">
+          <mxGeometry height="16" width="268" x="1391" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_96" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=2;dashed=1;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="78" width="268" x="1391" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_97" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="🔴  Cuota vencida" vertex="1">
+          <mxGeometry height="16" width="180" x="1401" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_98" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="hoy 09:00" vertex="1">
+          <mxGeometry height="14" width="80" x="1571" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_99" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Su cuota de septiembre 2026 venció el 05/09.&amp;nbsp;&lt;div&gt;Saldo: $98.500 + interés. Toque para pagar.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="248" x="1401" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_100" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=2;dashed=1;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="78" width="268" x="1391" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_101" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="🟠  Aviso de morosidad" vertex="1">
+          <mxGeometry height="16" width="180" x="1401" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_102" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="hace 2 días" vertex="1">
+          <mxGeometry height="14" width="80" x="1571" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_103" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Su unidad ingresó en morosidad.&amp;nbsp;&lt;div&gt;Puede solicitar un convenio de pago.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="248" x="1401" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_104" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="78" width="268" x="1391" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_105" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="🔔  Recordatorio" vertex="1">
+          <mxGeometry height="16" width="180" x="1401" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_106" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="01/09 08:00" vertex="1">
+          <mxGeometry height="14" width="80" x="1571" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_107" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Su cuota vence en 3 días." vertex="1">
+          <mxGeometry height="44" width="248" x="1401" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_108" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="78" width="268" x="1391" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_109" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="✅  Pago recibido" vertex="1">
+          <mxGeometry height="16" width="180" x="1401" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_110" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="05/08 17:22" vertex="1">
+          <mxGeometry height="14" width="80" x="1571" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_111" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Se registró su pago de agosto. Recibo N° 4471." vertex="1">
+          <mxGeometry height="44" width="248" x="1401" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_112" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Configurar recordatorios" vertex="1">
+          <mxGeometry height="32" width="268" x="1391" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_113" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="Inicio   |   Cuotas   |   Pagar   |   Alertas" vertex="1">
+          <mxGeometry height="26" width="268" x="1388" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="n9079_114" parent="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#555555;" value="Flujo de navegación del residente:  M1 → M2 → M3 → M4,  con acceso permanente a M5 desde la barra inferior." vertex="1">
+          <mxGeometry height="26" width="1180" x="40" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="P2. Escritorio — Inicio de sesión (Administrador)" id="2wUzxtS5lV4-82VwPqhy">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1300" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n187_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Prototipo de baja fidelidad — Inicio de sesión, aplicación web de escritorio" vertex="1">
+          <mxGeometry height="40" width="1240" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="620" width="1180" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_3" parent="1" style="rounded=0;html=1;fillColor=#e8e8e8;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="28" width="1180" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_4" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=9;align=left;spacingLeft=8;fontColor=#777777;" value="sggc.nuevoshorizontes.cl/login" vertex="1">
+          <mxGeometry height="18" width="420" x="130" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_5" parent="1" style="rounded=0;html=1;fillColor=#f2f2f2;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="592" width="520" x="60" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_6" parent="1" style="rounded=0;html=1;fillColor=#e4e4e4;strokeColor=#aaaaaa;fontSize=11;fontColor=#777777;" value="[ imagen / ilustración ]" vertex="1">
+          <mxGeometry height="60" width="200" x="220" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_7" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Gestión de gastos comunes Edificio Nuevos Horizontes" vertex="1">
+          <mxGeometry height="50" width="280" x="180" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_8" parent="1" style="text;html=1;align=left;fontSize=18;fontStyle=1;fontColor=#333333;" value="Iniciar sesión" vertex="1">
+          <mxGeometry height="30" width="400" x="680" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_9" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ingrese sus credenciales para continuar" vertex="1">
+          <mxGeometry height="20" width="400" x="680" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Usuario o RUT" vertex="1">
+          <mxGeometry height="18" width="400" x="680" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="admin@nuevoshorizontes.cl" vertex="1">
+          <mxGeometry height="40" width="400" x="680" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_12" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contraseña" vertex="1">
+          <mxGeometry height="18" width="400" x="680" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="••••••••••" vertex="1">
+          <mxGeometry height="40" width="400" x="680" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_14" parent="1" style="text;html=1;align=center;fontSize=12;fontColor=#888888;" value="👁" vertex="1">
+          <mxGeometry height="20" width="30" x="1040" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_15" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="☐  Recordarme" vertex="1">
+          <mxGeometry height="20" width="200" x="680" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_16" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="¿Olvidó su contraseña?" vertex="1">
+          <mxGeometry height="20" width="170" x="910" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_17" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Ingresar" vertex="1">
+          <mxGeometry height="44" width="400" x="680" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_18" parent="1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#666666;dashed=1;fontSize=10;fontColor=#555555;" value="⚠  Usuario o contraseña incorrectos. Le quedan 2 intentos." vertex="1">
+          <mxGeometry height="30" width="400" x="680" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_19" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Estado de error — solo referencia de diseño" vertex="1">
+          <mxGeometry height="18" width="400" x="680" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_20" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="Los perfiles Administrador, Conserje y Residente usan la misma pantalla; el sistema resuelve el destino según el rol del usuario autenticado." vertex="1">
+          <mxGeometry height="46" width="400" x="680" y="606" as="geometry" />
+        </mxCell>
+        <mxCell id="n187_21" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="Inicio de sesión (RF-01)" vertex="1">
+          <mxGeometry height="22" width="1180" x="60" y="704" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="P3. Escritorio — Registro de residentes" id="T-Lf9N0GHFFooOL7DWtW">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1300" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n4626_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Prototipo de baja fidelidad — Gestión del registro de residentes" vertex="1">
+          <mxGeometry height="40" width="1240" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="720" width="1180" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_3" parent="1" style="rounded=0;html=1;fillColor=#e8e8e8;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="28" width="1180" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_4" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="74" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_5" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_6" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="106" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_7" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=9;align=left;spacingLeft=8;fontColor=#777777;" value="sggc.nuevoshorizontes.cl/residentes" vertex="1">
+          <mxGeometry height="18" width="420" x="130" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="" vertex="1">
+          <mxGeometry height="44" width="1180" x="60" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_9" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="SGGC · Nuevos Horizontes" vertex="1">
+          <mxGeometry height="24" width="240" x="76" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Administrador  ▾" vertex="1">
+          <mxGeometry height="24" width="150" x="1070" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_11" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;" value="🔔 5" vertex="1">
+          <mxGeometry height="22" width="50" x="1010" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_12" parent="1" style="rounded=0;html=1;fillColor=#f2f2f2;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="648" width="190" x="60" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Inicio" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;fontSize=10;fontStyle=1;align=left;spacingLeft=10;fontColor=#111111;" value="Residentes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Departamentos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Gastos del período" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Cuotas y pagos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Morosidad" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Recordatorios" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Informes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Configuración" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_22" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="Gestión del registro de residentes (RF-02, RF-03)" vertex="1">
+          <mxGeometry height="22" width="1180" x="60" y="804" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_23" parent="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#333333;" value="Residentes" vertex="1">
+          <mxGeometry height="26" width="300" x="266" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="Buscar por nombre, RUT o departamento" vertex="1">
+          <mxGeometry height="32" width="400" x="266" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_25" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Tipo: Todos ▾" vertex="1">
+          <mxGeometry height="32" width="130" x="678" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_26" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Estado: Activos ▾" vertex="1">
+          <mxGeometry height="32" width="140" x="816" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_27" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="+ Nuevo residente" vertex="1">
+          <mxGeometry height="32" width="180" x="1008" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Nombre" vertex="1">
+          <mxGeometry height="30" width="230" x="266" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="RUT" vertex="1">
+          <mxGeometry height="30" width="130" x="496" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Depto" vertex="1">
+          <mxGeometry height="30" width="80" x="626" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Tipo" vertex="1">
+          <mxGeometry height="30" width="120" x="706" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Contacto" vertex="1">
+          <mxGeometry height="30" width="200" x="826" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Estado" vertex="1">
+          <mxGeometry height="30" width="100" x="1026" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="30" width="80" x="1126" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Ana Rojas Vergara" vertex="1">
+          <mxGeometry height="34" width="230" x="266" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="15.234.876-2" vertex="1">
+          <mxGeometry height="34" width="130" x="496" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1204" vertex="1">
+          <mxGeometry height="34" width="80" x="626" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Propietario" vertex="1">
+          <mxGeometry height="34" width="120" x="706" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="+56 9 8123 4567" vertex="1">
+          <mxGeometry height="34" width="200" x="826" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Activo" vertex="1">
+          <mxGeometry height="34" width="100" x="1026" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="80" x="1126" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_42" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✎   🗑" vertex="1">
+          <mxGeometry height="18" width="60" x="1136" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Luis Pardo Cifuentes" vertex="1">
+          <mxGeometry height="34" width="230" x="266" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="9.876.543-1" vertex="1">
+          <mxGeometry height="34" width="130" x="496" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0803" vertex="1">
+          <mxGeometry height="34" width="80" x="626" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Arrendatario" vertex="1">
+          <mxGeometry height="34" width="120" x="706" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="lpardo@mail.cl" vertex="1">
+          <mxGeometry height="34" width="200" x="826" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Activo" vertex="1">
+          <mxGeometry height="34" width="100" x="1026" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="80" x="1126" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_50" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✎   🗑" vertex="1">
+          <mxGeometry height="18" width="60" x="1136" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Marta Silva Bravo" vertex="1">
+          <mxGeometry height="34" width="230" x="266" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="12.098.765-4" vertex="1">
+          <mxGeometry height="34" width="130" x="496" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1501" vertex="1">
+          <mxGeometry height="34" width="80" x="626" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Propietario" vertex="1">
+          <mxGeometry height="34" width="120" x="706" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="+56 9 7654 3210" vertex="1">
+          <mxGeometry height="34" width="200" x="826" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Activo" vertex="1">
+          <mxGeometry height="34" width="100" x="1026" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="80" x="1126" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_58" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✎   🗑" vertex="1">
+          <mxGeometry height="18" width="60" x="1136" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Jorge Núñez Soto" vertex="1">
+          <mxGeometry height="34" width="230" x="266" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="17.456.789-K" vertex="1">
+          <mxGeometry height="34" width="130" x="496" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0402" vertex="1">
+          <mxGeometry height="34" width="80" x="626" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Arrendatario" vertex="1">
+          <mxGeometry height="34" width="120" x="706" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="jnunez@mail.cl" vertex="1">
+          <mxGeometry height="34" width="200" x="826" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Activo" vertex="1">
+          <mxGeometry height="34" width="100" x="1026" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="80" x="1126" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_66" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✎   🗑" vertex="1">
+          <mxGeometry height="18" width="60" x="1136" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Claudia Vera Lagos" vertex="1">
+          <mxGeometry height="34" width="230" x="266" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="11.222.333-9" vertex="1">
+          <mxGeometry height="34" width="130" x="496" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1907" vertex="1">
+          <mxGeometry height="34" width="80" x="626" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Propietario" vertex="1">
+          <mxGeometry height="34" width="120" x="706" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="+56 9 5566 7788" vertex="1">
+          <mxGeometry height="34" width="200" x="826" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Inactivo" vertex="1">
+          <mxGeometry height="34" width="100" x="1026" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="80" x="1126" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_74" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✎   🗑" vertex="1">
+          <mxGeometry height="18" width="60" x="1136" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_75" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="Mostrando 5 de 160 residentes" vertex="1">
+          <mxGeometry height="20" width="300" x="266" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_76" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="◀  1  2  3 … 32  ▶" vertex="1">
+          <mxGeometry height="24" width="300" x="886" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_77" parent="1" style="rounded=1;arcSize=6;html=1;fillColor=#fafafa;strokeColor=#888888;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="420" width="260" x="966" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_78" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Nuevo residente" vertex="1">
+          <mxGeometry height="22" width="200" x="980" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_79" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="✕" vertex="1">
+          <mxGeometry height="20" width="20" x="1194" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_80" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Nombre completo" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="Ana Rojas Vergara" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_82" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="RUT" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="15.234.876-2" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_84" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Departamento" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="1204  ▾" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_86" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Tipo de residencia" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="Propietario  ▾" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_88" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Teléfono" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="+56 9 8123 4567" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="556" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_90" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Correo electrónico" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="588" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="arojas@mail.cl" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_92" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Contacto de emergencia" vertex="1">
+          <mxGeometry height="14" width="232" x="980" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="Pedro Rojas · +56 9 3344 5566" vertex="1">
+          <mxGeometry height="26" width="232" x="980" y="652" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_94" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Cancelar" vertex="1">
+          <mxGeometry height="34" width="108" x="980" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_95" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Guardar" vertex="1">
+          <mxGeometry height="34" width="108" x="1104" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="n4626_96" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="El RUT debe ser único. Campos obligatorios en negrita." vertex="1">
+          <mxGeometry height="40" width="232" x="980" y="730" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="P4. Escritorio — Cuotas y pagos" id="-6FcZDAa8hJcN4dbKHVY">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1300" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n8917_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Prototipo de baja fidelidad — Visualización y gestión de cuotas y pagos" vertex="1">
+          <mxGeometry height="40" width="1240" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="739" width="1253" x="33" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_3" parent="1" style="rounded=0;html=1;fillColor=#e8e8e8;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="28" width="1186" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_4" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="74" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_5" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_6" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="106" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_7" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=9;align=left;spacingLeft=8;fontColor=#777777;" value="sggc.nuevoshorizontes.cl/cuotas" vertex="1">
+          <mxGeometry height="18" width="420" x="130" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="" vertex="1">
+          <mxGeometry height="44" width="1186" x="60" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_9" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="SGGC · Nuevos Horizontes" vertex="1">
+          <mxGeometry height="24" width="240" x="76" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Administrador  ▾" vertex="1">
+          <mxGeometry height="24" width="150" x="1070" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_11" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;" value="🔔 5" vertex="1">
+          <mxGeometry height="22" width="50" x="1010" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_12" parent="1" style="rounded=0;html=1;fillColor=#f2f2f2;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="648" width="190" x="60" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Inicio" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Residentes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Departamentos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Gastos del período" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;fontSize=10;fontStyle=1;align=left;spacingLeft=10;fontColor=#111111;" value="Cuotas y pagos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Morosidad" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Recordatorios" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Informes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Configuración" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_22" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="Gestión de la visualización de cuotas y pagos (RF-05, RF-07, RF-10)" vertex="1">
+          <mxGeometry height="22" width="1180" x="60" y="804" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_23" parent="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#333333;" value="Cuotas y pagos" vertex="1">
+          <mxGeometry height="26" width="300" x="266" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_24" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Período: Septiembre 2026  ▾" vertex="1">
+          <mxGeometry height="28" width="210" x="826" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_25" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Calcular cuotas del período" vertex="1">
+          <mxGeometry height="28" width="180" x="1050" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_26" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="66" width="228" x="266" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_27" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Emitido del período" vertex="1">
+          <mxGeometry height="16" width="200" x="278" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_28" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="$ 15.760.000" vertex="1">
+          <mxGeometry height="24" width="208" x="278" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_29" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="66" width="228" x="506" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_30" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Recaudado" vertex="1">
+          <mxGeometry height="16" width="200" x="518" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_31" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="$ 11.820.000  (75%)" vertex="1">
+          <mxGeometry height="24" width="208" x="518" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_32" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="66" width="228" x="746" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_33" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Pendiente" vertex="1">
+          <mxGeometry height="16" width="200" x="758" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_34" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="$  2.940.000" vertex="1">
+          <mxGeometry height="24" width="208" x="758" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_35" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="66" width="228" x="986" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_36" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="En morosidad" vertex="1">
+          <mxGeometry height="16" width="200" x="998" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_37" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="$  1.000.000  ·  18 unidades" vertex="1">
+          <mxGeometry height="24" width="208" x="998" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_38" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="Detalle por unidad" vertex="1">
+          <mxGeometry height="22" width="300" x="266" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_39" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Estado: Todos ▾" vertex="1">
+          <mxGeometry height="26" width="140" x="886" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_40" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Exportar  ▾" vertex="1">
+          <mxGeometry height="26" width="120" x="1038" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Depto" vertex="1">
+          <mxGeometry height="30" width="90" x="266" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Residente" vertex="1">
+          <mxGeometry height="30" width="210" x="356" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Monto cuota" vertex="1">
+          <mxGeometry height="30" width="130" x="566" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Interés" vertex="1">
+          <mxGeometry height="30" width="100" x="696" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Saldo" vertex="1">
+          <mxGeometry height="30" width="120" x="796" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Vencimiento" vertex="1">
+          <mxGeometry height="30" width="130" x="916" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Estado" vertex="1">
+          <mxGeometry height="30" width="130" x="1046" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="1176" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1204" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Ana Rojas Vergara" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 98.500" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 1.970" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 100.470" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/09/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="En morosidad" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_57" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0803" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Luis Pardo Cifuentes" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 92.300" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="—" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 0" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/10/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Pagada" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_66" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1501" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Marta Silva Bravo" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 105.700" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="—" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 105.700" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/10/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Notificada" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_75" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0402" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Jorge Núñez Soto" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 88.100" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 1.320" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 89.420" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/09/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Vencida" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_84" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="454" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1907" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Claudia Vera Lagos" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 112.400" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="—" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 0" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/10/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Pagada" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_93" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_94" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0601" vertex="1">
+          <mxGeometry height="34" width="90" x="266" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Rodrigo Maldonado" vertex="1">
+          <mxGeometry height="34" width="210" x="356" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 94.800" vertex="1">
+          <mxGeometry height="34" width="130" x="566" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_97" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 2.840" vertex="1">
+          <mxGeometry height="34" width="100" x="696" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 97.640" vertex="1">
+          <mxGeometry height="34" width="120" x="796" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_99" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/08/2026" vertex="1">
+          <mxGeometry height="34" width="130" x="916" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Convenio" vertex="1">
+          <mxGeometry height="34" width="130" x="1046" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_101" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="34" width="100" x="1176" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_102" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Ver  ·  Pagar" vertex="1">
+          <mxGeometry height="18" width="90" x="1184" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_103" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Registrar pago presencial" vertex="1">
+          <mxGeometry height="32" width="200" x="266" y="562" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_104" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Conciliar cartola bancaria" vertex="1">
+          <mxGeometry height="32" width="200" x="478" y="562" as="geometry" />
+        </mxCell>
+        <mxCell id="n8917_105" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="Los estados posibles de una cuota son: Emitida, Notificada, Pagada, Vencida, En morosidad y Regularizada." vertex="1">
+          <mxGeometry height="44" width="300" x="916" y="556" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram><diagram name="P5. Escritorio — Recordatorios y alertas por morosidad" id="thf7Rf9JaicHNFVrX_nR">
+    <mxGraphModel dx="1981" dy="826" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n5910_1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#333333;" value="Prototipo de baja fidelidad — Envío de recordatorios y alertas por morosidad" vertex="1">
+          <mxGeometry height="40" width="1240" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_2" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="738" width="1236" x="38" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_3" parent="1" style="rounded=0;html=1;fillColor=#e8e8e8;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="28" width="1180" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_4" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="74" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_5" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_6" parent="1" style="ellipse;fillColor=#cccccc;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="9" width="9" x="106" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_7" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=9;align=left;spacingLeft=8;fontColor=#777777;" value="sggc.nuevoshorizontes.cl/recordatorios" vertex="1">
+          <mxGeometry height="18" width="420" x="130" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=11;fontStyle=1;fontColor=#333333;align=center;" value="" vertex="1">
+          <mxGeometry height="44" width="1180" x="60" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_9" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="SGGC · Nuevos Horizontes" vertex="1">
+          <mxGeometry height="24" width="240" x="76" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_10" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Administrador  ▾" vertex="1">
+          <mxGeometry height="24" width="150" x="1070" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_11" parent="1" style="rounded=1;arcSize=40;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;" value="🔔 5" vertex="1">
+          <mxGeometry height="22" width="50" x="1010" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_12" parent="1" style="rounded=0;html=1;fillColor=#f2f2f2;strokeColor=#999999;" value="" vertex="1">
+          <mxGeometry height="648" width="190" x="60" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Inicio" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Residentes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Departamentos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Gastos del período" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Cuotas y pagos" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Morosidad" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;fontSize=10;fontStyle=1;align=left;spacingLeft=10;fontColor=#111111;" value="Recordatorios" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Informes" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#999999;fontSize=10;align=left;spacingLeft=10;fontColor=#333333;" value="Configuración" vertex="1">
+          <mxGeometry height="30" width="174" x="68" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_22" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="Envío de recordatorios o alertas por morosidad (RF-06, RF-09)" vertex="1">
+          <mxGeometry height="22" width="1180" x="60" y="804" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_23" parent="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#333333;" value="Recordatorios y alertas" vertex="1">
+          <mxGeometry height="26" width="340" x="266" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_24" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="18 unidades en morosidad  ·  $1.000.000 adeudado" vertex="1">
+          <mxGeometry height="20" width="420" x="266" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_25" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="1. Seleccionar destinatarios" vertex="1">
+          <mxGeometry height="20" width="300" x="266" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="☑" vertex="1">
+          <mxGeometry height="28" width="40" x="266" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Depto" vertex="1">
+          <mxGeometry height="28" width="90" x="306" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Residente" vertex="1">
+          <mxGeometry height="28" width="210" x="396" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Días de atraso" vertex="1">
+          <mxGeometry height="28" width="130" x="606" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Saldo" vertex="1">
+          <mxGeometry height="28" width="120" x="736" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Último aviso" vertex="1">
+          <mxGeometry height="28" width="140" x="856" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑" vertex="1">
+          <mxGeometry height="32" width="40" x="266" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1204" vertex="1">
+          <mxGeometry height="32" width="90" x="306" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Ana Rojas Vergara" vertex="1">
+          <mxGeometry height="32" width="210" x="396" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="12" vertex="1">
+          <mxGeometry height="32" width="130" x="606" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 100.470" vertex="1">
+          <mxGeometry height="32" width="120" x="736" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="01/09/2026" vertex="1">
+          <mxGeometry height="32" width="140" x="856" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑" vertex="1">
+          <mxGeometry height="32" width="40" x="266" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0402" vertex="1">
+          <mxGeometry height="32" width="90" x="306" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Jorge Núñez Soto" vertex="1">
+          <mxGeometry height="32" width="210" x="396" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="12" vertex="1">
+          <mxGeometry height="32" width="130" x="606" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$  89.420" vertex="1">
+          <mxGeometry height="32" width="120" x="736" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="01/09/2026" vertex="1">
+          <mxGeometry height="32" width="140" x="856" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑" vertex="1">
+          <mxGeometry height="32" width="40" x="266" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0601" vertex="1">
+          <mxGeometry height="32" width="90" x="306" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Rodrigo Maldonado" vertex="1">
+          <mxGeometry height="32" width="210" x="396" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="43" vertex="1">
+          <mxGeometry height="32" width="130" x="606" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$  97.640" vertex="1">
+          <mxGeometry height="32" width="120" x="736" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="15/08/2026" vertex="1">
+          <mxGeometry height="32" width="140" x="856" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☐" vertex="1">
+          <mxGeometry height="32" width="40" x="266" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="1105" vertex="1">
+          <mxGeometry height="32" width="90" x="306" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Patricia Fuentes Lara" vertex="1">
+          <mxGeometry height="32" width="210" x="396" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="8" vertex="1">
+          <mxGeometry height="32" width="130" x="606" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$  91.200" vertex="1">
+          <mxGeometry height="32" width="120" x="736" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Sin aviso" vertex="1">
+          <mxGeometry height="32" width="140" x="856" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑" vertex="1">
+          <mxGeometry height="32" width="40" x="266" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="0209" vertex="1">
+          <mxGeometry height="32" width="90" x="306" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Héctor Zamora Díaz" vertex="1">
+          <mxGeometry height="32" width="210" x="396" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="67" vertex="1">
+          <mxGeometry height="32" width="130" x="606" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="$ 184.300" vertex="1">
+          <mxGeometry height="32" width="120" x="736" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="20/07/2026" vertex="1">
+          <mxGeometry height="32" width="140" x="856" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_62" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="4 de 18 unidades seleccionadas" vertex="1">
+          <mxGeometry height="18" width="260" x="266" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_63" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Seleccionar todas" vertex="1">
+          <mxGeometry height="26" width="150" x="686" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_64" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="2. Componer el aviso" vertex="1">
+          <mxGeometry height="20" width="300" x="1006" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_65" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Canal de envío" vertex="1">
+          <mxGeometry height="16" width="220" x="1006" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑ Correo electrónico" vertex="1">
+          <mxGeometry height="24" width="220" x="1006" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑ Mensaje de texto (SMS)" vertex="1">
+          <mxGeometry height="24" width="220" x="1006" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="☑ Notificación en la aplicación" vertex="1">
+          <mxGeometry height="24" width="220" x="1006" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_69" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Plantilla" vertex="1">
+          <mxGeometry height="16" width="220" x="1006" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;fontColor=#777777;" value="Aviso de morosidad  ▾" vertex="1">
+          <mxGeometry height="28" width="220" x="1006" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_71" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Vista previa del mensaje" vertex="1">
+          <mxGeometry height="16" width="220" x="1006" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_72" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bbbbbb;fontSize=10;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#333333;" value="Estimado/a {nombre}:  Su cuota de gastos comunes del departamento {depto}, período {periodo}, registra {dias} días de atraso y un saldo de {saldo}.  Puede pagar en línea o solicitar un convenio de pago.  Administración Edificio Nuevos Horizontes" vertex="1">
+          <mxGeometry height="170" width="220" x="1006" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_73" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontColor=#333333;" value="Programar envío" vertex="1">
+          <mxGeometry height="32" width="105" x="1006" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_74" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontSize=11;fontStyle=1;fontColor=#222222;" value="Enviar ahora" vertex="1">
+          <mxGeometry height="32" width="105" x="1121" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_75" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=left;fillColor=#ffffff;strokeColor=#999999;fontSize=9;fontColor=#555555;dashed=1;" value="Los avisos automáticos se envían al vencer el plazo y al día 16, cuando la unidad entra en morosidad." vertex="1">
+          <mxGeometry height="52" width="220" x="1006" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_76" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#333333;" value="3. Historial de envíos" vertex="1">
+          <mxGeometry height="20" width="300" x="266" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Fecha" vertex="1">
+          <mxGeometry height="28" width="130" x="266" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Destinatarios" vertex="1">
+          <mxGeometry height="28" width="130" x="396" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Canal" vertex="1">
+          <mxGeometry height="28" width="150" x="526" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Plantilla" vertex="1">
+          <mxGeometry height="28" width="200" x="676" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#999999;fontSize=10;fontStyle=1;fontColor=#333333;" value="Resultado" vertex="1">
+          <mxGeometry height="28" width="120" x="876" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="01/09/2026" vertex="1">
+          <mxGeometry height="30" width="130" x="266" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="18" vertex="1">
+          <mxGeometry height="30" width="130" x="396" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Correo + SMS" vertex="1">
+          <mxGeometry height="30" width="150" x="526" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Aviso de morosidad" vertex="1">
+          <mxGeometry height="30" width="200" x="676" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="18 entregados" vertex="1">
+          <mxGeometry height="30" width="120" x="876" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="25/08/2026" vertex="1">
+          <mxGeometry height="30" width="130" x="266" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="46" vertex="1">
+          <mxGeometry height="30" width="130" x="396" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Correo" vertex="1">
+          <mxGeometry height="30" width="150" x="526" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Recordatorio previo" vertex="1">
+          <mxGeometry height="30" width="200" x="676" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="44 entregados · 2 error" vertex="1">
+          <mxGeometry height="30" width="120" x="876" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="05/08/2026" vertex="1">
+          <mxGeometry height="30" width="130" x="266" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="160" vertex="1">
+          <mxGeometry height="30" width="130" x="396" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_94" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Correo + App" vertex="1">
+          <mxGeometry height="30" width="150" x="526" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="Emisión de cuota" vertex="1">
+          <mxGeometry height="30" width="200" x="676" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n5910_96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=10;fontColor=#333333;" value="160 entregados" vertex="1">
+          <mxGeometry height="30" width="120" x="876" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
